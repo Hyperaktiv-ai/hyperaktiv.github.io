@@ -11,6 +11,9 @@ nav_external_links:
   - title: Go to website
     url: https://kohomai.com
 
+logo: "/assets/kohomai.png"
+favicon_ico: "/assets/favicon.png"
+
 #aux_links:
 #  Template Repository: https://github.com/just-the-docs/just-the-docs-template
 
