@@ -1,8 +1,8 @@
-title: Just the Docs Template
+title: Kohomai documentation
 description: A starter template for a Jeykll site using the Just the Docs theme!
 theme: just-the-docs
 
-url: https://kohomai.github.io/doc
+url: https://kohomai.github.io
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+#aux_links:
+#  Template Repository: https://github.com/just-the-docs/just-the-docs-template
