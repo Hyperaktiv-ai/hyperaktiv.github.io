@@ -1,5 +1,5 @@
 ---
-title: Kohomai documentation
+title: Home
 layout: home
 ---
 
