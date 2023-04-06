@@ -4,5 +4,12 @@ theme: just-the-docs
 
 url: https://kohomai.github.io
 
+repository: kohomai/kohomai.github.io # for github-metadata
+
+# External navigation links
+nav_external_links:
+  - title: Go to website
+    url: https://kohomai.com
+
 #aux_links:
 #  Template Repository: https://github.com/just-the-docs/just-the-docs-template
