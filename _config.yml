@@ -8,13 +8,14 @@ repository: kohomai/kohomai.github.io # for github-metadata
 
 # External navigation links
 nav_external_links:
-  - title: Go to website
+  - title: API
+    url: https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0
+  - title: App
+    url: https://app.kohomai.com
+  - title: Website
     url: https://kohomai.com
 
 logo: "/assets/logo.png"
 favicon_ico: "/assets/favicon.png"
-
-aux_links:
-  "API documentation": https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0
 
 footer_content: "&copy; 2023 Kohomai GmbH"
