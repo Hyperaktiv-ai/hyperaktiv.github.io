@@ -1,5 +1,5 @@
 title: Kohomai documentation
-description: A starter template for a Jeykll site using the Just the Docs theme!
+description: How to use the API and the SDK
 theme: just-the-docs
 
 url: https://kohomai.github.io
@@ -8,7 +8,7 @@ repository: kohomai/kohomai.github.io # for github-metadata
 
 # External navigation links
 nav_external_links:
-  - title: API
+  - title: API (swagger)
     url: https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0
   - title: App
     url: https://app.kohomai.com
