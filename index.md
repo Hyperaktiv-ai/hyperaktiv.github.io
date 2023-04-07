@@ -5,4 +5,4 @@ nav_order: 1
 permalink: /
 ---
 
-Kohomai documentation
+# Kohomai documentation
