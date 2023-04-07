@@ -31,7 +31,7 @@ Use [POST /workflows/{workflow-id}/register](https://app.swaggerhub.com/apis-doc
     "Firstname": "John",
     "Lastname": "Doe",
     "UsrContactPrefs": {
-      "PersonalEmail": "johndoe@kohomai.com"
+      "PersonalEmail": "johndoe@gmail.com"
     }
   }
 }
