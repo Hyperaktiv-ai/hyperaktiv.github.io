@@ -26,7 +26,7 @@ Use [POST /workflows/{workflow-id}/register](https://app.swaggerhub.com/apis-doc
 
 ```json
 {
-  "RedirectURL": "http://www.google.com",
+  "RedirectURL": "http://www.myapp.com",
   "User": {
     "Firstname": "John",
     "Lastname": "Doe",
@@ -46,7 +46,7 @@ fetch('https://app.kohomai.com/api/v1/workflows/' + xxx + '/register', {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ "RedirectURL": "http://www.google.com", "User": { "Firstname": "John", "Lastname": "Doe", "UsrContactPrefs": { "PersonalEmail": "john.doe@gmail.com" } } })
+    body: JSON.stringify({ "RedirectURL": "http://www.myapp.com", "User": { "Firstname": "John", "Lastname": "Doe", "UsrContactPrefs": { "PersonalEmail": "john.doe@gmail.com" } } })
 })
    .then(response => response.json())
    .then(response => console.log(JSON.stringify(response)))
@@ -59,7 +59,7 @@ The response contains the URL you have to open for the new joiner to complete th
 ```json
 {
     "UUID": "2bb35288-f2ac-4c68-b7aa-51acd82af485",
-    "RedirectURL": "http://www.google.com",
+    "RedirectURL": "http://www.myapp.com",
     "ConnectionURL": "http://app.kohomai.com/internal/v1/autologin?UUID=2bb35288-f2ac-4c68-b7aa-51acd82af485",
     "ValidUntil": "2022-04-07T13:10:01.614Z",
     "changedDate": "2022-04-07T13:05:01.620Z",
@@ -94,7 +94,7 @@ Use [POST /sessions](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/ses
     "User": {
         "Id" : 74590868830731162
     },
-    "RedirectURL": "https://www.google.com"
+    "RedirectURL": "https://www.myapp.com"
 }
 ```
 
@@ -107,7 +107,7 @@ fetch('https://app.kohomai.com/api/v1/sessions', {
         'Accept': 'application/json',
         'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ "RedirectURL": "http://www.google.com", "User": { "Id": "xxx" } } })
+    body: JSON.stringify({ "RedirectURL": "http://www.myapp.com", "User": { "Id": "xxx" } } })
 })
    .then(response => response.json())
    .then(response => console.log(JSON.stringify(response)))
@@ -120,7 +120,7 @@ The response contains the URL you have to open for the new joiner to complete th
 ```json
 {
     "UUID": "2bb35288-f2ac-4c68-b7aa-51acd82af485",
-    "RedirectURL": "http://www.google.com",
+    "RedirectURL": "http://www.myapp.com",
     "ConnectionURL": "http://app.kohomai.com/internal/v1/autologin?UUID=2bb35288-f2ac-4c68-b7aa-51acd82af485",
     "ValidUntil": "2022-04-07T13:10:01.614Z",
     "changedDate": "2022-04-07T13:05:01.620Z",
