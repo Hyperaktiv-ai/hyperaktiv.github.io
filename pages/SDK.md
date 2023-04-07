@@ -24,7 +24,18 @@ You will need the ``id`` of the workflow you want to register new joiners for. T
 
 Use [POST /workflows/{workflow-id}/register](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/workflows/post_workflows__workflow_id__register) endpoint.
 
-![image](https://user-images.githubusercontent.com/3019346/230613915-302ef1e0-3448-4977-8653-3773ab889452.png)
+```json
+{
+  "RedirectURL": "http://www.google.com",
+  "User": {
+    "Firstname": "John",
+    "Lastname": "Doe",
+    "UsrContactPrefs": {
+      "PersonalEmail": "johndoe@kohomai.com"
+    }
+  }
+}
+```
 
 ### Option 2 : Javascript
 
@@ -45,7 +56,21 @@ fetch('https://app.kohomai.com/api/v1/workflows/' + xxx + '/register', {
 
 The response contains the URL you have to open for the new joiner to complete their journey :
 
-![image](https://user-images.githubusercontent.com/3019346/230613865-96859469-380f-4d83-87e0-9225ae2f16c0.png)
+```json
+{
+    "UUID": "2bb35288-f2ac-4c68-b7aa-51acd82af485",
+    "RedirectURL": "http://www.google.com",
+    "ConnectionURL": "http://app.kohomai.com/internal/v1/autologin?UUID=2bb35288-f2ac-4c68-b7aa-51acd82af485",
+    "ValidUntil": "2022-04-07T13:10:01.614Z",
+    "changedDate": "2022-04-07T13:05:01.620Z",
+    "createdDate": "2022-04-07T13:04:59.755Z",
+    "User": {
+        "Firstname": "John",
+        "Lastname": "Doe",
+        "Id": 74590868830731162
+    }
+}
+```
 
 # Completion of the journey for an existing new joiner
 
@@ -64,8 +89,14 @@ You will need the ``id`` of the new joiner you want to open a session for. Two o
 ### Option 1 : API call
 
 Use [POST /sessions](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/sessions/post_sessions) endpoint.
-
-![image](https://user-images.githubusercontent.com/3019346/230616621-269db653-23a6-48f6-9f34-25b8b4c2fa72.png)
+```json
+{
+    "User": {
+        "Id" : 74590868830731162
+    },
+    "RedirectURL": "https://www.google.com"
+}
+```
 
 ### Option 2 : Javascript
 
@@ -86,4 +117,18 @@ fetch('https://app.kohomai.com/api/v1/sessions', {
 
 The response contains the URL you have to open for the new joiner to complete their journey :
 
-![image](https://user-images.githubusercontent.com/3019346/230616671-97be7b8a-04a4-4fdb-98c1-6a2b7b960b8d.png)
+```json
+{
+    "UUID": "2bb35288-f2ac-4c68-b7aa-51acd82af485",
+    "RedirectURL": "http://www.google.com",
+    "ConnectionURL": "http://app.kohomai.com/internal/v1/autologin?UUID=2bb35288-f2ac-4c68-b7aa-51acd82af485",
+    "ValidUntil": "2022-04-07T13:10:01.614Z",
+    "changedDate": "2022-04-07T13:05:01.620Z",
+    "createdDate": "2022-04-07T13:04:59.755Z",
+    "User": {
+        "Firstname": "John",
+        "Lastname": "Doe",
+        "Id": 74590868830731162
+    }
+}
+```
