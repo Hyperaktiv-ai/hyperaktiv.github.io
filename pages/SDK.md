@@ -7,8 +7,7 @@ description: "How to integrate Kohomai in your app."
 # Registration of an end user
 
 This service allows you to :
-- register an end user
-- start their journey by assigning a workflow
+- register an end user and start their journey
 - get the url of a web page where they can complete their journey
 - redirect them to a specific URL once all available activities of the journey are completed
 
@@ -22,7 +21,7 @@ You will need the ``id`` of the workflow you want to register end users for. Two
 
 ### Option 1 : API call
 
-Use [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.1#/journeys/post_journeys) endpoint.
+Add an API endpoint as a starting point in your workflow, and use the generatd key to call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.1#/journeys/post_journeys) endpoint.
 
 ```json
 {
@@ -37,7 +36,15 @@ Use [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.1#/jou
         },
         "Workflow": {
             "Id": xxx
-        }
+        },
+        "JourneyData" :[
+            {
+                "StringValue": "example",
+                "DataKey": {
+                    "Id": 123456789
+                }
+            }
+        ]
     }
 }
 ```
