@@ -21,7 +21,7 @@ You will need the ``id`` of the workflow you want to register end users for. Two
 
 ### Option 1 : API call
 
-Add an API endpoint as a starting point in your workflow, and use the generatd key to call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.1#/journeys/post_journeys) endpoint.
+Add an API endpoint as a starting point in your workflow, and use the generatd key to call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/journeys/post_journeys) endpoint.
 
 ```json
 {
