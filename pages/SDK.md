@@ -30,12 +30,9 @@ Add an API endpoint as a starting point in your workflow, and use the generatd k
         "User": {
             "Firstname": "John",
             "Lastname": "Doe",
-            "UsrContactPrefs": {
-                "PersonalEmail": "johndoe@gmail.com"
+            "ContactPrefs": {
+                "Email": "johndoe@gmail.com"
             }
-        },
-        "Workflow": {
-            "Id": xxx
         },
         "JourneyData" :[
             {
@@ -59,7 +56,7 @@ fetch('https://app.kohomai.com/api/v1/journeys', {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-    "RedirectURL": "https://www.myapp.com", "Journey": { "User": { "Firstname": "John", "Lastname": "Doe", "UsrContactPrefs": { "PersonalEmail": "johndoe@gmail.com" }}, "Workflow": { "Id": xxx }}}) })
+    "RedirectURL": "https://www.myapp.com", "Journey": { "User": { "Firstname": "John", "Lastname": "Doe", "ContactPrefs": { "Email": "johndoe@gmail.com" }}}}) })
    .then(response => response.json())
    .then(response => console.log(JSON.stringify(response)))
 ```
