@@ -25,7 +25,6 @@ Add an API endpoint as a starting point in your workflow, and use the generatd k
 
 ```json
 {
-    "RedirectURL": "https://www.myapp.com",
     "Journey": {
         "User": {
             "Firstname": "John",
@@ -37,12 +36,13 @@ Add an API endpoint as a starting point in your workflow, and use the generatd k
         "JourneyData" :[
             {
                 "StringValue": "example",
-                "DataKey": {
+                "DataPoint": {
                     "Id": 123456789
                 }
             }
         ]
-    }
+    },
+    "RedirectURL": "https://www.myapp.com"
 }
 ```
 
