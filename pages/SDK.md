@@ -4,24 +4,24 @@ title: SDK
 nav_order: 2
 description: "How to integrate Kohomai in your app."
 ---
-# Registration of an end user
+# Registration of a lead
 
 This service allows you to :
-- register an end user and start their journey
-- get the url of a web page where they can complete their journey
-- redirect them to a specific URL once all available activities of the journey are completed
+- register a lead and start their journey
+- get the url of the front-office where they can complete their journey (if you want them to) 
+- redirect them to a specific URL once they completed all available activities
 
-## Retrieve the id of the workflow
+## Retrieve the id of the funnel
 
-You will need the ``id`` of the workflow you want to register end users for. Two options :
-  * in the back-office, edit the workflow ; the URL is ``https://app.kohomai.com/p/funnels/edit/xxx``, where "xxx" is the ``id`` of the workflow.
-  * with the API, find your workflow using [``GET /workflows``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/workflows/get_workflows) endpoint.
+You will need the ``id`` of the funnel you want to register leads on. Two options :
+  * in the back-office, edit the funnel ; the URL is ``https://app.kohomai.com/p/funnels/edit/xxx``, where "xxx" is the ``id`` of the funnel.
+  * with the API, find your funnel using [``GET /workflows``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/funnels/get_funnels) endpoint.
 
-## Registration of an end user, and initialization of their journey
+## Registration of a lead, and initialization of their journey
 
 ### Option 1 : API call
 
-Add an API endpoint as a starting point in your workflow, and use the generatd key to call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/journeys/post_journeys) endpoint.
+Add an API endpoint as a starting point in your funnel, and use the generated reference to call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/journeys/post_journeys) endpoint.
 
 ```json
 {
@@ -56,7 +56,8 @@ fetch('https://app.kohomai.com/api/v1/journeys', {
         'Content-Type': 'application/json'
     },
     body: JSON.stringify({
-    "RedirectURL": "https://www.myapp.com", "Journey": { "User": { "Firstname": "John", "Lastname": "Doe", "ContactPrefs": { "Email": "johndoe@gmail.com" }}}}) })
+    "Journey": { "User": { "Firstname": "John", "Lastname": "Doe", "ContactPrefs": { "Email": "johndoe@gmail.com" }}}, "RedirectURL": "https://www.myapp.com"
+    }) })
    .then(response => response.json())
    .then(response => console.log(JSON.stringify(response)))
 ```
@@ -81,17 +82,17 @@ The response contains the URL you have to open for the end user to complete thei
 }
 ```
 
-# Completion of the journey for an existing end user
+# Completion of the journey for an existing lead
 
 This service allows you to :
-- get the URL of a web page where an existing end user can complete their journey
-- redirect them to a specific URL once all available activities of the journey are completed
+- get the url of the front-office where they can complete their journey (if you want them to) 
+- redirect them to a specific URL once they completed all available activities
 
-## Retrieve the id of the end user
+## Retrieve the id of the lead
 
-You will need the ``id`` of the end user you want to open a session for. Two options :
-  * in the back-office, edit the end user ; the URL is ``https://app.kohomai.com/p/settings/users/xxx``, where "xxx" is the ``id`` of the new joiner.
-  * with the API, find your end user using [``GET /users``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/users/get_users) endpoint.
+You will need the ``id`` of the lead you want to open a session for. Two options :
+  * in the back-office, open the page showing the details of the lead : Menu "Leads" > click on one lead, then click on the "edit" button on the top right of the screen ; the URL is ``https://app.kohomai.com/p/settings/users/xxx``, where "xxx" is the ``id`` of the lead.
+  * with the API, find your lead using [``GET /users``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/users/get_users) endpoint.
 
 ## Creation of a session
 
@@ -124,7 +125,7 @@ fetch('https://app.kohomai.com/api/v1/sessions', {
 
 ## Web page to complete the journey
 
-The response contains the URL you have to open for the end user to complete their journey :
+The response contains the URL you have to open for the lead to complete their journey :
 
 ```json
 {
