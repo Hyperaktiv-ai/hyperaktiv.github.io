@@ -49,11 +49,12 @@ Add an API endpoint as a starting point in your funnel, and use the generated re
 ### Option 2 : Javascript
 
 ```js
-fetch('https://app.kohomai.com/api/v1/journeys', {
+fetch('https://app.kohomai.com/api/v1/journeys?ref=YYY', {
     method: 'POST',
     headers: {
         'Accept': 'application/json',
-        'Content-Type': 'application/json'
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer XXX'
     },
     body: JSON.stringify({
     "Journey": { "User": { "Firstname": "John", "Lastname": "Doe", "ContactPrefs": { "Email": "johndoe@gmail.com" }}}, "RedirectURL": "https://www.myapp.com"
