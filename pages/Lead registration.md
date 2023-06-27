@@ -31,7 +31,7 @@ The "JourneyData" attribute is optional ; you can use it in order to add data to
 1. In the back-office, add an API endpoint as a starting point in your funnel ; a reference code is generated.
 2. Call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
-Parameter : "ref=[the generated reference code of the starting point]"
+The reference of the starting point has to be set as "ref" parameter. You can find the reference in the back-office by opening the funnel, and clicking on the API starting point.
 Body :
 ```json
 {
