@@ -39,4 +39,4 @@ Journey-specific data is automatically made accessible by Kohomai through data p
 
 ## Session
 
-You can create sessions through the API when you want to redirect your leads or external stakeholders to our front-office without asking them to use the login page. You can find more information about sessions [here](/front-office%20session.html).
+You can create sessions through the API when you want to redirect your leads or external stakeholders to our front-office without asking them to use the login page. You can find more information about sessions [here](/Front-office%20session.html).
