@@ -14,7 +14,7 @@ Kohomai offers a back-office where you can setup your workspace, an API given ac
 
 Base url for the API is ``https://app.kohomai.com/api/v1``.
 You can find instructions on how to authenticate to our API [here](/pages/API%20authentication.html).
-Our Postman collection can be used to facilitate tests on our API : [Kohomai API on Postman](https://kohomai.postman.co/workspace/Kohomai~79462e29-fc9a-4b2c-8d41-bc662701b9da/collection/19855856-94cfa45e-58ff-4eeb-b1a3-7137759a6e4c?action=share&creator=19855856).
+Our Postman collection can be used to facilitate tests on our API : [Kohomai API on Postman](https://kohomai.postman.co/workspace/Kohomai~79462e29-fc9a-4b2c-8d41-bc662701b9da/collection/19855856-94cfa45e-58ff-4eeb-b1a3-7137759a6e4c?action=share&creator=19855856){:target="_blank"}{:rel="noopener noreferrer"}.
 You can also browse and call our API with [SwaggerHub](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Terminology
