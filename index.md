@@ -21,6 +21,11 @@ You can also browse and call our API with [SwaggerHub](https://app.swaggerhub.co
 
 ## Roles
 
+* Administrator : allows complete access to your workspace's back-office
+* Manager : allows access to the whole back-office but workspace settings
+* Lead : role assigned to new leads ; they have only access to the front-office, when activities are assigned to them
+* Stakeholder : can be assigned to users who are not leads but who require and access to the front-office (they can even be external to your organization)
+
 ## Lead
 
 A lead is a person who has been registered on Kohomai ; the email of the lead is the key piece of information Kohomai needs : depending on the information found online about the lead, the qualification algorithm implemented in Kohomai will define the onboarding journey the lead will be assigned to, with tailored activities assigned.
