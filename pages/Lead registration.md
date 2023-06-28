@@ -4,7 +4,7 @@ title: Lead registration
 nav_order: 3
 description: "How to register a new lead in Kohomai"
 ---
-{% assign apiURL = "https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2" %}
+{% include _includes/variables.md %}
 
 # How to register a new lead in Kohomai
 
