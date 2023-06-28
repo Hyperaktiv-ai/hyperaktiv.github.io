@@ -9,7 +9,7 @@ description: "How to integrate Kohomai in Bubble"
 # How to integrate Kohomai in Bubble
 
 ## Install API plugin
-In your [Bubble] app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "API Connector" plugin, and click "Install".
+In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "API Connector" plugin, and click "Install".
 
 ## Configure a new API call
 In API Connector plugin page, click on "Add another API", and set the following values :
@@ -37,4 +37,4 @@ Click on "Add another call", and set :
 Go to the workflow you want to use to call Kohomai, and click on "Click here to add an action...". In the drop down menu, go to "Plugins", and select "Kohomai - Register a lead" (or whatever you previously set as a name).
 Set the parameters values for the API call in the contextual popup of this step ; if this workflow is triggered from a page containing a form with a field named "firstname", then you would have to use "Input firstname's value" for example.
 
-[Bubble]: https://bubble.io{:target="_blank"}{:rel="noopener noreferrer"}
+[Bubble]: https://bubble.io
