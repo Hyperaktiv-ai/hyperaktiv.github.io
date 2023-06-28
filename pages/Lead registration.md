@@ -21,7 +21,7 @@ In order to call this API endpoint, you need to know the id of the funnel you wa
 
 You have 2 options to find the ``id`` of the funnel you want to register leads on :
   * in the back-office, edit the funnel ; the URL is ``https://app.kohomai.com/p/funnels/edit/xxx``, where "xxx" is the ``id`` of the funnel.
-  * with an API client (like Swagger or Postman for example), find your funnel using [``GET /funnels``]({{ apiURL }}#/funnels/get_funnels){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+  * with an API client (like Swagger or Postman for example), find your funnel using [``GET /funnels``]({{ apiUrl }}#/funnels/get_funnels){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 ## Registration of a new lead
 
@@ -31,7 +31,7 @@ The "JourneyData" attribute is optional ; you can use it in order to add data to
 ### Option 1 : API call
 
 1. In the back-office, add an API endpoint as a starting point in your funnel ; a reference code is generated.
-2. Call [POST /journeys]({{ apiURL }}#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+2. Call [POST /journeys]({{ apiUrl }}#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 The reference of the starting point has to be set as "ref" parameter. You can find the reference in the back-office by opening the funnel, and clicking on the API starting point.
 Body :
