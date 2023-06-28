@@ -17,7 +17,7 @@ In order to call this API endpoint, you need to know the journey id of the lead.
 
 You have 2 options to find the ``id`` of the journey linked to the lead you want to open a session for :
   * in the back-office, open the page showing the details of the lead : menu "Leads" then select the lead ; the URL is ``https://app.kohomai.com/p/journeys/xxx``, where "xxx" is the ``id`` of the journey.
-  * with an API client (like Swagger or Postman for example), find the journey using [``GET /journeys``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/journeys/get_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+  * with an API client (like Swagger or Postman for example), find the journey using [``GET /journeys``]({{ apiURL }}#/journeys/get_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 ## Open a session and get Magic Link
 
@@ -25,7 +25,7 @@ The "RedirectURL" attribute is optional ; you can use it in order to automatical
 
 ### Option 1 : API call
 
-Use [POST /sessions](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/sessions/post_sessions){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+Use [POST /sessions]({{ apiURL }}#/sessions/post_sessions){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 ```json
 {
     "Journey": {
