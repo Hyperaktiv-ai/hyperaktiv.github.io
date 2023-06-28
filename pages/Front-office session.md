@@ -5,6 +5,7 @@ nav_order: 4
 description: "Get the URL of the web interface for an existing lead."
 ---
 {% assign apiURL = "https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2" %}
+{% include variables.md %}
 {{ apiUrl2 }}
 
 # Front-office session
