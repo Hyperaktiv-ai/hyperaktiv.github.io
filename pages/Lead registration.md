@@ -5,7 +5,6 @@ nav_order: 3
 description: "How to register a new lead in Kohomai"
 ---
 {% include variables.md %}
-{{ apiUrl }}
 
 # How to register a new lead in Kohomai
 
