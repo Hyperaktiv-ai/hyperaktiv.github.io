@@ -7,7 +7,7 @@ description: "Get the URL of the web interface for an existing lead."
 
 # Front-office session
 
-When your funnel contains activities which are assigned to the role "Lead", these activities are automatically made accessible to your leads for completion. You can review the status of each activity in the journey of a specific lead in the back-office (tab "Journey" on a lead's page) or with the API ([``GET /journeys/{journey-id}``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/journeys/get_journeys__journey_id_){:target="_blank"}{:rel="noopener noreferrer"}).
+When your funnel contains activities which are assigned to the role "Lead", these activities are automatically made accessible to your leads for completion. You can review the status of each activity in the journey of a specific lead in the back-office (tab "Journey" on a lead's page) or with the API ([``GET /journeys/{journey-id}``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/journeys/get_journeys__journey_id_){:target="_blank"}{:rel="noopener noreferrer"}).
 Leads have to complete their activities using the web interface. They can either login by themselves through the login page, or you can use our API to get a magiclink and redirect them to this URL, where they would be automatically logged in. The magiclink can be used only once.
 
 In order to call this API endpoint, you need to know the journey id of the lead.
@@ -16,7 +16,7 @@ In order to call this API endpoint, you need to know the journey id of the lead.
 
 You have 2 options to find the ``id`` of the journey linked to the lead you want to open a session for :
   * in the back-office, open the page showing the details of the lead : menu "Leads" then select the lead ; the URL is ``https://app.kohomai.com/p/journeys/xxx``, where "xxx" is the ``id`` of the journey.
-  * with an API client (like Swagger or Postman for example), find the journey using [``GET /journeys``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/journeys/get_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+  * with an API client (like Swagger or Postman for example), find the journey using [``GET /journeys``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/journeys/get_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 ## Open a session and get Magic Link
 
@@ -24,7 +24,7 @@ The "RedirectURL" attribute is optional ; you can use it in order to automatical
 
 ### Option 1 : API call
 
-Use [POST /sessions](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/sessions/post_sessions){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+Use [POST /sessions](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/sessions/post_sessions){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 ```json
 {
     "Journey": {
