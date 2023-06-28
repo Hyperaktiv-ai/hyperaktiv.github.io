@@ -4,7 +4,7 @@ title: Front-office session
 nav_order: 4
 description: "Get the URL of the web interface for an existing lead."
 ---
-{% include _includes/variables.md %}
+{% include variables.md %}
 
 # Front-office session
 
