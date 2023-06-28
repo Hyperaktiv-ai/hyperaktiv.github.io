@@ -16,7 +16,7 @@ In API Connector plugin page, click on "Add another API", and set the following 
 * API Name : Kohomai _(you can use another name)_
 * Authentication : Private key in header
 * Key name : Authorization
-* Key value : _paste your API key here_
+* Key value : Bearer XXX _(where XXX is your API)_
 
 Click on "Add a shared header", and set :
 * Key : Content-Type
@@ -29,7 +29,7 @@ Click on "expand" next to the "API call" which was automatically created, and se
 * Method : POST
 * URL : https://app.kohomai.com/api/v1/journeys?ref=XXX _(where XXX is the reference of the API starting point in your funnel)_
 * Body type : JSON
-* Body : {"Firstname": \"\<firstname>", "Lastname": "\<lastname>", "Email": "\<email>"}
+* Body : {\"Firstname\": \"\<firstname\>\", \"Lastname\": \"\<lastname\>\", \"Email\": \"\<email\>\"}
 * Body parameters : 3 keys should have been created : firstname, lastname, email ; leave the values empty
 
 ## Insert the API call in your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} workflow
