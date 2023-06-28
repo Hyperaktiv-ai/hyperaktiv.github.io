@@ -5,13 +5,6 @@ nav_order: 4
 description: "Get the URL of the web interface for an existing lead."
 ---
 
-brackets 2 : {{ nav_external_links }}
-brackets 2 : {{ .nav_external_links }}
-brackets 2 : {{ :nav_external_links }}
-brackets 2 : {{ nav_external_links[0].url }}
-brackets 2 : {{ .nav_external_links[0].url }}
-brackets 2 : {{ :nav_external_links[0].url }}
-
 # Front-office session
 
 When your funnel contains activities which are assigned to the role "Lead", these activities are automatically made accessible to your leads for completion. You can review the status of each activity in the journey of a specific lead in the back-office (tab "Journey" on a lead's page) or with the API ([``GET /journeys/{journey-id}``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/journeys/get_journeys__journey_id_){:target="_blank"}{:rel="noopener noreferrer"}).
