@@ -30,7 +30,9 @@ Click on "expand" next to the "API call" which was automatically created, and se
 * URL : https://app.kohomai.com/api/v1/journeys?ref=XXX _(where XXX is the reference of the API starting point in your funnel)_
 * Body type : JSON
 * Body : {\"Firstname\": \"\<firstname\>\", \"Lastname\": \"\<lastname\>\", \"Email\": \"\<email\>\"}
-* Body parameters : 3 keys should have been created : firstname, lastname, email ; leave the values empty
+* Body parameters : 3 keys should have been created : firstname, lastname, email ; leave the values empty, but uncheck "private" for all parameters.
+* Include errors in response and allow workflow actions to continue : yes
+* Capture response headers : no
 
 ## Insert the API call in your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} workflow
 
