@@ -32,7 +32,7 @@ Click on "Add another call", and set :
 * Body : "{"Firstname": "<firstname>", "Lastname": "<lastname>", "Email": "<email>", "RedirectURL": "<redirectURL>"}"
 * Body parameters : 4 keys should have been created : firstname, lastname, email, redirectURL ; leave the values empty
 
-## Insert the API call in your [Bubble] workflow
+## Insert the API call in your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} workflow
 
 Go to the workflow you want to use to call Kohomai, and click on "Click here to add an action...". In the drop down menu, go to "Plugins", and select "Kohomai - Register a lead" (or whatever you previously set as a name).
 Set the parameters values for the API call in the contextual popup of this step ; if this workflow is triggered from a page containing a form with a field named "firstname", then you would have to use "Input firstname's value" for example.
