@@ -4,7 +4,7 @@ title: Lead registration
 nav_order: 3
 description: "How to register a new lead in Kohomai"
 ---
-{% include _includes/variables.md %}
+{% include variables.md %}
 {{ apiUrl2 }}
 
 # How to register a new lead in Kohomai
