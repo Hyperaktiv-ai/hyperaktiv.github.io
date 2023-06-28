@@ -22,7 +22,7 @@ Click on "Add a shared header", and set :
 * Key : Content-Type
 * Value : application/json
 
-Click on "Add another call", and set :
+Click on "expand" next to the "API call" which was automatically created, and set :
 * Name : Register a lead _(you can use another name)_
 * Use as : Action
 * Data type : JSON
