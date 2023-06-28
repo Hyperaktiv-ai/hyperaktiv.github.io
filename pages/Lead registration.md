@@ -19,7 +19,7 @@ In order to call this API endpoint, you need to know the id of the funnel you wa
 
 You have 2 options to find the ``id`` of the funnel you want to register leads on :
   * in the back-office, edit the funnel ; the URL is ``https://app.kohomai.com/p/funnels/edit/xxx``, where "xxx" is the ``id`` of the funnel.
-  * with an API client (like Swagger or Postman for example), find your funnel using [``GET /funnels``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/funnels/get_funnels){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+  * with an API client (like Swagger or Postman for example), find your funnel using [``GET /funnels``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/funnels/get_funnels){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 ## Registration of a new lead
 
@@ -29,30 +29,25 @@ The "JourneyData" attribute is optional ; you can use it in order to add data to
 ### Option 1 : API call
 
 1. In the back-office, add an API endpoint as a starting point in your funnel ; a reference code is generated.
-2. Call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+2. Call [POST /journeys](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 The reference of the starting point has to be set as "ref" parameter. You can find the reference in the back-office by opening the funnel, and clicking on the API starting point.
 Body :
 ```json
 {
-    "Journey": {
-        "User": {
-            "Firstname": "John",
-            "Lastname": "Doe",
-            "ContactPrefs": {
-                "Email": "johndoe@gmail.com"
+    "Firstname": "John",
+    "Lastname": "Doe",
+    "Email": "johndoe@gmail.com",
+    "PhoneNumber": "+1 (800) 555‑0175",
+    "RedirectURL": "https://www.myapp.com",
+    "JourneyData" :[
+        {
+            "StringValue": "example",
+            "DataPoint": {
+                "Id": 123456789
             }
-        },
-        "JourneyData" :[
-            {
-                "StringValue": "example",
-                "DataPoint": {
-                    "Id": 123456789
-                }
-            }
-        ]
-    },
-    "RedirectURL": "https://www.myapp.com"
+        }
+    ]
 }
 ```
 
@@ -67,7 +62,7 @@ fetch('https://app.kohomai.com/api/v1/journeys?ref=YYY', {
         'Authorization': 'Bearer XXX'
     },
     body: JSON.stringify({
-    "Journey": { "User": { "Firstname": "John", "Lastname": "Doe", "ContactPrefs": { "Email": "johndoe@gmail.com" }}}, "RedirectURL": "https://www.myapp.com"
+    "Firstname": "John", "Lastname": "Doe", "Email": "johndoe@gmail.com", "PhoneNumber": "+1 (800) 555‑0175", "RedirectURL": "https://www.myapp.com", "JourneyData" :[ { "StringValue": "example", "DataPoint": { "Id": 123456789 }} ]
     }) })
    .then(response => response.json())
    .then(response => console.log(JSON.stringify(response)))
