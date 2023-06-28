@@ -9,7 +9,7 @@ repository: kohomai/kohomai.github.io # for github-metadata
 # External navigation links
 nav_external_links:
   - title: API (swagger)
-    url: https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0
+    url: https://app.swaggerhub.com/apis-docs/Kohomai/api
   - title: App
     url: https://app.kohomai.com
   - title: Website
@@ -47,3 +47,5 @@ search:
   # Enable or disable the search button that appears in the bottom right corner of every page
   # Supports true or false (default)
   button: false
+
+test1: coucou

@@ -14,12 +14,17 @@ Kohomai offers a back-office where you can setup your workspace, an API given ac
 
 Base url for the API is ``https://app.kohomai.com/api/v1``.
 You can find instructions on how to authenticate to our API [here](/pages/API%20authentication.html).
-Our Postman collection can be used to facilitate tests on our API : [Kohomai API on Postman](https://kohomai.postman.co/workspace/Kohomai~79462e29-fc9a-4b2c-8d41-bc662701b9da/collection/19855856-94cfa45e-58ff-4eeb-b1a3-7137759a6e4c?action=share&creator=19855856).
-You can also browse and call our API with [SwaggerHub](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.0.0)[newtab]
+Our Postman collection can be used to facilitate tests on our API : [Kohomai API on Postman](https://kohomai.postman.co/workspace/Kohomai~79462e29-fc9a-4b2c-8d41-bc662701b9da/collection/19855856-94cfa45e-58ff-4eeb-b1a3-7137759a6e4c?action=share&creator=19855856){:target="_blank"}{:rel="noopener noreferrer"}.
+You can also browse and call our API with [SwaggerHub](https://app.swaggerhub.com/apis-docs/Kohomai/api){:target="_blank"}{:rel="noopener noreferrer"}
 
 # Terminology
 
 ## Roles
+
+* Administrator : allows complete access to your workspace's back-office
+* Manager : allows access to the whole back-office but workspace settings
+* Lead : role assigned to new leads ; they have only access to the front-office, when activities are assigned to them
+* Stakeholder : can be assigned to users who are not leads but who require and access to the front-office (they can even be external to your organization)
 
 ## Lead
 
@@ -39,4 +44,4 @@ Journey-specific data is automatically made accessible by Kohomai through data p
 
 ## Session
 
-You can create sessions through the API when you want to redirect your leads or external stakeholders to our front-office without asking them to use the login page. You can find more information about sessions [here](/front-office%20session.html).
+You can create sessions through the API when you want to redirect your leads or external stakeholders to our front-office without asking them to use the login page. You can find more information about sessions [here](/Front-office%20session.html).
