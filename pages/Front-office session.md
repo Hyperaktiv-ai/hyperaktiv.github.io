@@ -4,10 +4,11 @@ title: Front-office session
 nav_order: 4
 description: "Get the URL of the web interface for an existing lead."
 ---
+{% assign apiURL = "https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2" %}
 
 # Front-office session
 
-When your funnel contains activities which are assigned to the role "Lead", these activities are automatically made accessible to your leads for completion. You can review the status of each activity in the journey of a specific lead in the back-office (tab "Journey" on a lead's page) or with the API ([``GET /journeys/{journey-id}``](https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2#/journeys/get_journeys__journey_id_){:target="_blank"}{:rel="noopener noreferrer"}).
+When your funnel contains activities which are assigned to the role "Lead", these activities are automatically made accessible to your leads for completion. You can review the status of each activity in the journey of a specific lead in the back-office (tab "Journey" on a lead's page) or with the API ([``GET /journeys/{journey-id}``]({{ apiURL }}#/journeys/get_journeys__journey_id_){:target="_blank"}{:rel="noopener noreferrer"}).
 Leads have to complete their activities using the web interface. They can either login by themselves through the login page, or you can use our API to get a magiclink and redirect them to this URL, where they would be automatically logged in. The magiclink can be used only once.
 
 In order to call this API endpoint, you need to know the journey id of the lead.
