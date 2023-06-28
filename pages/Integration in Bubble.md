@@ -13,28 +13,29 @@ In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugi
 
 ## Configure a new API call
 In API Connector plugin page, click on "Add another API", and set the following values :
-* API Name : "Kohomai" _(you can use another name)_
+* API Name : Kohomai _(you can use another name)_
 * Authentication : Private key in header
-* Key name : "Authorization"
+* Key name : Authorization
 * Key value : _paste your API key here_
 
 Click on "Add a shared header", and set :
-* Key : "Content-Type"
-* Value : "application/json"
+* Key : Content-Type
+* Value : application/json
 
 Click on "Add another call", and set :
-* Name : "Register a lead" _(you can use another name)_
+* Name : Register a lead _(you can use another name)_
 * Use as : Action
 * Data type : JSON
 * Method : POST
-* URL : "https://app.kohomai.com/api/v1/journeys?ref=XXX" _(where XXX is the reference of the API starting point in your funnel)_
+* URL : https://app.kohomai.com/api/v1/journeys?ref=XXX _(where XXX is the reference of the API starting point in your funnel)_
 * Body type : JSON
-* Body : "{"Firstname": "<firstname>", "Lastname": "<lastname>", "Email": "<email>", "RedirectURL": "<redirectURL>"}"
+* Body : {"Firstname": "<firstname>", "Lastname": "<lastname>", "Email": "<email>", "RedirectURL": "<redirectURL>"}
 * Body parameters : 4 keys should have been created : firstname, lastname, email, redirectURL ; leave the values empty
 
 ## Insert the API call in your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} workflow
 
 Go to the workflow you want to use to call Kohomai, and click on "Click here to add an action...". In the drop down menu, go to "Plugins", and select "Kohomai - Register a lead" (or whatever you previously set as a name).
+
 Set the parameters values for the API call in the contextual popup of this step ; if this workflow is triggered from a page containing a form with a field named "firstname", then you would have to use "Input firstname's value" for example.
 
 [Bubble]: https://bubble.io
