@@ -5,12 +5,12 @@ nav_order: 4
 description: "Get the URL of the web interface for an existing lead."
 ---
 
-brackets : { test1 }
-brackets 2 : {{ test1 }}
-brackets : { .test1 }
-brackets 2 : {{ .test1 }}
-brackets : { :test1 }
-brackets 2 : {{ :test1 }}
+brackets 2 : {{ nav_external_links }}
+brackets 2 : {{ .nav_external_links }}
+brackets 2 : {{ :nav_external_links }}
+brackets 2 : {{ nav_external_links[0].url }}
+brackets 2 : {{ .nav_external_links[0].url }}
+brackets 2 : {{ :nav_external_links[0].url }}
 
 # Front-office session
 
