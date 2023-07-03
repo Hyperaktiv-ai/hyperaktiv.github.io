@@ -33,22 +33,11 @@ The "JourneyData" attribute is optional ; you can use it in order to add data to
 2. Call [POST /journeys]({{ apiUrl }}#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 The reference of the starting point has to be set as "ref" parameter. You can find the reference in the back-office by opening the funnel, and clicking on the API starting point.
+
 Body :
 ```json
 {
-    "Firstname": "John",
-    "Lastname": "Doe",
-    "Email": "johndoe@gmail.com",
-    "PhoneNumber": "+1 (800) 555‑0175",
-    "RedirectURL": "https://www.myapp.com",
-    "JourneyData" :[
-        {
-            "StringValue": "example",
-            "DataPoint": {
-                "Id": 123456789
-            }
-        }
-    ]
+    "Email": "johndoe@gmail.com"
 }
 ```
 
@@ -62,11 +51,32 @@ fetch('https://app.kohomai.com/api/v1/journeys?ref=YYY', {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer XXX'
     },
-    body: JSON.stringify({
-    "Firstname": "John", "Lastname": "Doe", "Email": "johndoe@gmail.com", "PhoneNumber": "+1 (800) 555‑0175", "RedirectURL": "https://www.myapp.com", "JourneyData" :[ { "StringValue": "example", "DataPoint": { "Id": 123456789 }} ]
-    }) })
+    body: JSON.stringify({ "Email": "johndoe@gmail.com" }) })
    .then(response => response.json())
    .then(response => console.log(JSON.stringify(response)))
+```
+
+### Can I send more information about my lead 
+
+Yes, it's possible to send more information about your lead. Details can be found [here]({{ apiUrl }}#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"}.
+
+Body :
+```json
+{
+    "Email": "johndoe@gmail.com",
+    "Firstname": "John",
+    "Lastname": "Doe",
+    "PhoneNumber": "+1 (800) 555‑0175",
+    "RedirectURL": "https://www.myapp.com",
+    "JourneyData" :[
+        {
+            "StringValue": "example",
+            "DataPoint": {
+                "Id": 123456789
+            }
+        }
+    ]
+}
 ```
 
 ### URL of the web front-office to complete the journey
