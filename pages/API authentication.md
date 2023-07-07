@@ -15,8 +15,8 @@ Your API key can be found in the back-office : "Settings" menu > "API".
 
 ## How to use my API key ?
 
-Each call to our API require the following header (where "xxx" has to be replaced by your API key) :
+Each call to our API require the following header (where ``[YOUR_API_KEY_HERE]`` has to be replaced by your API key) :
 
 ````
-"Authorization": "Bearer xxx"
+"Authorization": "Bearer [YOUR_API_KEY_HERE]"
 ````
