@@ -15,13 +15,13 @@ You have 2 options to register leads in Kohomai using your [Bubble]{:target="_bl
 ## Simplified : Kohomai plugin
 In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "Kohomai" plugin, and click "Install".
 
-In API Connector plugin page, set the following values :
+In the plugin page, set the following values :
 * API key : ``Bearer [YOUR_API_KEY]`` _(replace [YOUR_API_KEY] by the API key which is displayed in Kohomai/Settings/API, or in the "API starting point" page)_
 
 ## Advanced : API Connector plugin
 In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "API Connector" plugin, and click "Install".
 
-In API Connector plugin page, click on "Add another API", and set the following values :
+In the plugin page, click on "Add another API", and set the following values :
 * API Name : ``Kohomai`` _(you can use another name)_
 * Authentication : ``Private key in header``
 * Key name : ``Authorization``
