@@ -8,7 +8,7 @@ description: "How to integrate Kohomai in Bubble"
 
 # How to integrate Kohomai in Bubble
 
-You have 2 options to integrate Kohomai with Bublbe :
+You have 2 options to register leads in Kohomai using your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} website :
 * Simplified version : you can install our plugin (limited features : it's not possible to send custom data points)
 * Advanced version : you have to install the API connector plugin, and have access to all capabilities of Kohomai API.
 
