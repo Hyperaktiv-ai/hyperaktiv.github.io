@@ -38,7 +38,7 @@ Click on "expand" next to the "API call" which was automatically created, and se
 * Method : ``POST``
 * URL : ``https://app.kohomai.com/api/v1/journeys?ref=XXX`` _(where XXX is the reference of the "API starting point" in your funnel)_
 * Body type : ``JSON``
-* Body : ``{\"Email\": \"\<email\>\", \"Firstname\": \"\<firstname\>\", \"Lastname\": \"\<lastname\>\", \"PhoneNumber\": \"\<phoneNumber\>\"}``
+* Body : ``{"Email": "<email>", "Firstname": "<firstname>", "Lastname": "<lastname>", "PhoneNumber": "<phoneNumber>"}``
 * Body parameters : 4 keys should have been created : ``email``, ``firstname``, ``lastname``, ``phoneNumber`` ; leave the values empty, but uncheck "private" for all parameters.
 * Include errors in response and allow workflow actions to continue : ``yes``
 * Capture response headers : ``yes``
