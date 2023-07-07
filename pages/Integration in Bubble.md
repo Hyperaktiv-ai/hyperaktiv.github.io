@@ -16,7 +16,7 @@ You have 2 options to integrate Kohomai with Bublbe :
 In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "Kohomai" plugin, and click "Install".
 
 In API Connector plugin page, set the following values :
-* API key : ``Bearer [YOUR_API_KEY]`` _(replace [YOUR_API_KEY] by the API key which is displayed in Kohomai/Settings/API, or in the API starting point page)_
+* API key : ``Bearer [YOUR_API_KEY]`` _(replace [YOUR_API_KEY] by the API key which is displayed in Kohomai/Settings/API, or in the "API starting point" page)_
 
 ## Advanced : API Connector plugin
 In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "API Connector" plugin, and click "Install".
@@ -25,7 +25,7 @@ In API Connector plugin page, click on "Add another API", and set the following 
 * API Name : ``Kohomai`` _(you can use another name)_
 * Authentication : ``Private key in header``
 * Key name : ``Authorization``
-* Key value : ``Bearer [YOUR_API_KEY]`` _(replace [YOUR_API_KEY] by the API key which is displayed in Kohomai/Settings/API, or in the API starting point page)_
+* Key value : ``Bearer [YOUR_API_KEY]`` _(replace [YOUR_API_KEY] by the API key which is displayed in Kohomai/Settings/API, or in the "API starting point" page)_
 
 Click on "Add a shared header", and set :
 * Key : ``Content-Type``
@@ -36,8 +36,8 @@ Click on "expand" next to the "API call" which was automatically created, and se
 * Use as : ``Action``
 * Data type : ``JSON``
 * Method : ``POST``
-* URL : ``https://app.kohomai.com/api/v1/journeys?ref=XXX`` _(where XXX is the reference of the API starting point in your funnel)_
-* Body type : JSON
+* URL : ``https://app.kohomai.com/api/v1/journeys?ref=XXX`` _(where XXX is the reference of the "API starting point" in your funnel)_
+* Body type : ``JSON``
 * Body : ``{\"Email\": \"\<email\>\", \"Firstname\": \"\<firstname\>\", \"Lastname\": \"\<lastname\>\", \"PhoneNumber\": \"\<phoneNumber\>\"}``
 * Body parameters : 4 keys should have been created : ``email``, ``firstname``, ``lastname``, ``phoneNumber`` ; leave the values empty, but uncheck "private" for all parameters.
 * Include errors in response and allow workflow actions to continue : ``yes``
