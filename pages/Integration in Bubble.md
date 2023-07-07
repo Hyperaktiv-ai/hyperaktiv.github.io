@@ -47,6 +47,9 @@ Click on "expand" next to the "API call" which was automatically created, and se
 
 Go to the workflow you want to use to call Kohomai, and click on "Click here to add an action...". In the drop down menu, go to "Plugins", and select "Kohomai - Register a lead" (or whatever you previously set as a name).
 
-Set the parameters values for the API call in the contextual popup of this step. The ``email`` parameter is mandatory, so you will have to map this parameter with a textfield in your webpage ; for example, if your textfield is called "emailTextfield", you have to set the parameter value "Input emailTextfield's value". You can leave other parameter blank, or you can also map them to textfields value if they exist in your form.
+Set the parameters values for the API call in the contextual popup of this step.
+* The ``email`` parameter is mandatory, so you will have to map this parameter with a textfield in your webpage ; for example, if your textfield is called "emailTextfield", you have to set the parameter value "Input emailTextfield's value".
+* The ``ref`` parameter is mandatory, you should set a static value here (it's the id of the "API starting point")
+* You can leave other parameters blank, or you can also map them to textfields value if they exist in your form.
 
 [Bubble]: https://bubble.io
