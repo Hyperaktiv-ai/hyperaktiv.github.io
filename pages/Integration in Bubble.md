@@ -8,15 +8,25 @@ description: "How to integrate Kohomai in Bubble"
 
 # How to integrate Kohomai in Bubble
 
-## Install API plugin
+You have 2 options to integrate Kohomai with Bublbe :
+* Simplified version : you can install our plugin (limited features : it's not possible to send custom data points)
+* Advanced version : you have to install the API connector plugin, and have access to all capabilities of Kohomai API.
+
+## Simplified : Kohomai plugin
+In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "Kohomai" plugin, and click "Install".
+
+In API Connector plugin page, set the following values :
+* API key : Bearer [YOUR_API_KEY] _(replace [YOUR_API_KEY] by the API key which is displayed in Kohomai/Settings/API, or in the API starting point page)_
+
+## Advanced : API Connector plugin
 In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "API Connector" plugin, and click "Install".
 
-## Configure a new API call
+### Configure a new API call
 In API Connector plugin page, click on "Add another API", and set the following values :
 * API Name : Kohomai _(you can use another name)_
 * Authentication : Private key in header
 * Key name : Authorization
-* Key value : Bearer XXX _(where XXX is your API)_
+* Key value : Bearer [YOUR_API_KEY] _(replace [YOUR_API_KEY] by the API key which is displayed in Kohomai/Settings/API, or in the API starting point page)_
 
 Click on "Add a shared header", and set :
 * Key : Content-Type
@@ -32,12 +42,12 @@ Click on "expand" next to the "API call" which was automatically created, and se
 * Body : {\"Firstname\": \"\<firstname\>\", \"Lastname\": \"\<lastname\>\", \"Email\": \"\<email\>\"}
 * Body parameters : 3 keys should have been created : firstname, lastname, email ; leave the values empty, but uncheck "private" for all parameters.
 * Include errors in response and allow workflow actions to continue : yes
-* Capture response headers : no
+* Capture response headers : yes
 
-## Insert the API call in your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} workflow
+## Use the plugin in your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} workflow
 
 Go to the workflow you want to use to call Kohomai, and click on "Click here to add an action...". In the drop down menu, go to "Plugins", and select "Kohomai - Register a lead" (or whatever you previously set as a name).
 
-Set the parameters values for the API call in the contextual popup of this step ; if this workflow is triggered from a page containing a form with a field named "firstname", then you would have to use "Input firstname's value" for example.
+Set the parameters values for the API call in the contextual popup of this step. The ``email`` parameter is mandatory, so you will have to map this parameter with a textfield in your webpage ; for example, if your textfield is called "emailTextfield", you have to set the parameter value "Input emailTextfield's value". You can leave other parameter blank, or you can also map them to textfields value if they exist in your form.
 
 [Bubble]: https://bubble.io
