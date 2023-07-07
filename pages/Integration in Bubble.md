@@ -21,7 +21,6 @@ In API Connector plugin page, set the following values :
 ## Advanced : API Connector plugin
 In your [Bubble]{:target="_blank"}{:rel="noopener noreferrer"} app, go to "Plugins" on the left navigation panel, then click on "Add plugins" on the top right of the screen. Search "API Connector" plugin, and click "Install".
 
-### Configure a new API call
 In API Connector plugin page, click on "Add another API", and set the following values :
 * API Name : Kohomai _(you can use another name)_
 * Authentication : Private key in header
