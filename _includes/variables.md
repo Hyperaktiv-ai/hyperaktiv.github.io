@@ -1,1 +1,1 @@
-{% assign apiUrl = "https://app.swaggerhub.com/apis-docs/Kohomai/api/1.76.2" %}
+{% assign apiUrl = "https://app.swaggerhub.com/apis-docs/Kohomai/api/1.78.0" %}
