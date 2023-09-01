@@ -70,10 +70,8 @@ Body :
     "RedirectURL": "https://www.myapp.com",
     "JourneyData" :[
         {
-            "StringValue": "example",
-            "DataPoint": {
-                "Id": 123456789
-            }
+            "Name": "My datapoint",
+            "Value": "example"
         }
     ]
 }
