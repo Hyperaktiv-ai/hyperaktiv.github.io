@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Integration in Bubble
-nav_order: 5
+nav_order: 4
 description: "How to integrate Kohomai in Bubble"
 ---
 {% include variables.md %}
