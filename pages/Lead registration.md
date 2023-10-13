@@ -24,15 +24,15 @@ You have 2 options to find the ``id`` of the funnel you want to register leads o
 
 ## Registration of a new lead
 
-The "RedirectURL" attribute is optional ; you can use it in order to automatically redirect the lead once all they completed all available activities.
 The "JourneyData" attribute is optional ; you can use it in order to add data to the generated journey (the data points have to be created prior in your workspace).
+The "WebhookInput" attribute is optional ; you can use it in order to receive notification when specific events related to this lead occur.
 
 ### Option 1 : API call
 
-1. In the back-office, add an API endpoint as a starting point in your funnel ; a reference code is generated.
-2. Call [POST /journeys]({{ apiUrl }}#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+1. In the back-office, add an API endpoint as an origin in your funnel ; a reference code is generated.
+2. Call [POST /leads]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
-The reference of the starting point has to be set as "ref" parameter. You can find the reference in the back-office by opening the funnel, and clicking on the API starting point.
+The reference of the origin has to be set as "ref" parameter. You can find the reference in the back-office by opening the funnel, and clicking on the API origin.
 
 Body :
 ```json
@@ -44,7 +44,7 @@ Body :
 ### Option 2 : Javascript
 
 ```js
-fetch('https://app.kohomai.com/api/v1/journeys?ref=YYY', {
+fetch('https://app.kohomai.com/api/v1/leads?ref=YYY', {
     method: 'POST',
     headers: {
         'Accept': 'application/json',
@@ -58,7 +58,7 @@ fetch('https://app.kohomai.com/api/v1/journeys?ref=YYY', {
 
 ### Can I send more information about my lead 
 
-Yes, it's possible to send more information about your lead. Details can be found [here]({{ apiUrl }}#/journeys/post_journeys){:target="_blank"}{:rel="noopener noreferrer"}.
+Yes, it's possible to send more information about your lead. Details can be found [here]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Body :
 ```json
@@ -74,25 +74,5 @@ Body :
             "Value": "example"
         }
     ]
-}
-```
-
-### URL of the web front-office to complete the journey
-
-The response contains the URL you have to open for the lead to complete their journey (attribute "ConnectionURL") :
-
-```json
-{
-    "UUID": "2bb35288-f2ac-4c68-b7aa-51acd82af485",
-    "RedirectURL": "https://www.myapp.com",
-    "ConnectionURL": "http://app.kohomai.com/internal/v1/autologin?UUID=2bb35288-f2ac-4c68-b7aa-51acd82af485",
-    "ValidUntil": "2022-04-07T13:10:01.614Z",
-    "changedDate": "2022-04-07T13:05:01.620Z",
-    "createdDate": "2022-04-07T13:04:59.755Z",
-    "User": {
-        "Firstname": "John",
-        "Lastname": "Doe",
-        "Id": 74590868830731162
-    }
 }
 ```
