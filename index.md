@@ -12,7 +12,7 @@ Hyperaktiv offers a back-office where you can setup your workspace, an API given
 
 # API
 
-Base url for the API is ``https://app.hyperaktiv.ai/api/v1``.
+Base url for the API is ``https://app.swaggerhub.com/apis-docs/Hyperaktiv/api``.
 You can find instructions on how to authenticate to our API [here](/pages/API%20authentication.html).
 Our Postman collection can be used to facilitate tests on our API : [Hyperaktiv API on Postman](https://hyperaktiv.postman.co/workspace/Hyperaktiv~79462e29-fc9a-4b2c-8d41-bc662701b9da/collection/19855856-94cfa45e-58ff-4eeb-b1a3-7137759a6e4c?action=share&creator=19855856){:target="_blank"}{:rel="noopener noreferrer"}.
 You can also browse and call our API with [SwaggerHub](https://app.swaggerhub.com/apis-docs/Hyperaktiv/api){:target="_blank"}{:rel="noopener noreferrer"}
