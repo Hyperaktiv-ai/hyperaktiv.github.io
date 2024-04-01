@@ -1,24 +1,24 @@
-title: Kohomai documentation
+title: Hyperaktiv documentation
 description: How to use the API and the SDK
 theme: just-the-docs
 
-url: https://kohomai.github.io
+url: https://hyperaktiv.github.io
 
-repository: kohomai/kohomai.github.io # for github-metadata
+repository: hyperaktiv-ai/hyperaktiv.github.io # for github-metadata
 
 # External navigation links
 nav_external_links:
   - title: API (swagger)
-    url: https://app.swaggerhub.com/apis-docs/Kohomai/api
+    url: https://app.swaggerhub.com/apis-docs/Hyperaktiv/api
   - title: App
-    url: https://app.kohomai.com
+    url: https://app.hyperaktiv.ai
   - title: Website
-    url: https://kohomai.com
+    url: https://hyperaktiv.ai
 
 logo: "/assets/logo.png"
 favicon_ico: "/assets/favicon.png"
 
-footer_content: "&copy; 2023 Kohomai GmbH"
+footer_content: "&copy; 2021-2024 Kohomai GmbH"
 
 # Enable or disable the site search
 # Supports true (default) or false
@@ -48,4 +48,4 @@ search:
   # Supports true or false (default)
   button: false
 
-test1: coucou
+

@@ -2,13 +2,13 @@
 layout: default
 title: Lead registration
 nav_order: 3
-description: "How to register a new lead in Kohomai"
+description: "How to register a new lead in Hyperaktiv"
 ---
 {% include variables.md %}
 
-# How to register a new lead in Kohomai
+# How to register a new lead in Hyperaktiv
 
-Leads can be added to Kohomai using 3 different ways :
+Leads can be added to Hyperaktiv using 3 different ways :
 - manually using the back-office (menu "Leads", then "New" button)
 - programmatically using the API
 - leads can register themselves autonomously through a registration page
@@ -19,7 +19,7 @@ In order to call this API endpoint, you need to know the id of the funnel you wa
 ## How do I find the id of a funnel
 
 You have 2 options to find the ``id`` of the funnel you want to register leads on :
-  * in the back-office, edit the funnel ; the URL is ``https://app.kohomai.com/p/funnels/edit/xxx``, where "xxx" is the ``id`` of the funnel.
+  * in the back-office, edit the funnel ; the URL is ``https://app.hyperaktiv.ai/p/funnels/edit/xxx``, where "xxx" is the ``id`` of the funnel.
   * with an API client (like Swagger or Postman for example), find your funnel using [``GET /funnels``]({{ apiUrl }}#/funnels/get_funnels){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
 
 ## Registration of a new lead
@@ -44,7 +44,7 @@ Body :
 ### Option 2 : Javascript
 
 ```js
-fetch('https://app.kohomai.com/api/v1/leads?ref=YYY', {
+fetch('https://app.hyperaktiv.ai/api/v1/leads?ref=YYY', {
     method: 'POST',
     headers: {
         'Accept': 'application/json',
