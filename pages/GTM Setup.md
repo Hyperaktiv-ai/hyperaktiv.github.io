@@ -34,7 +34,7 @@ NB :
 Inside your app, you will need to insert some code to send specific events to GTM.
 
 ## Signup
-After a successful signup :
+After a successful signup, add this piece of Javascript :
 ````
 dataLayer.push({
   'event': 'signup',
@@ -44,18 +44,70 @@ dataLayer.push({
 });
 ````
 
-Replace "email" by "google" or any other SSO provider
-Replace "user_email" by the email of the user
-Replace "user_id" by the internal identifier of a user inside your product
+(Replace "email" by "google" or any other SSO provider, "user_email" by the email of the user and "user_id" by the internal identifier of a user inside your product)
 
-# Event configuration in GTM
+## Login
+After a successful login, add this piece of Javascript :
+````
+dataLayer.push({
+  'event': 'login',
+  'provider': 'email',
+  'user_email': 'johndoe@gmail.com',
+  'user_id': '123456789'
+});
+````
 
-First, create the following triggers in GTM :
+## Logout
+When your user logs out, add this piece of Javascript :
+````
+dataLayer.push({
+  'event': 'logout'
+});
+````
+
+## Purchase
+When your user finalized a subscription / purchase, add this piece of Javascript :
+````
+dataLayer.push({
+ 'event': 'revenue',
+ 'amount': 15,
+ 'currency': 'EUR',
+ 'product': 'basic_plan',
+ 'type': 'yearly'
+ });
+````
+(Replace the amount, currency, product and type by the correct values)
+
+## Activation event
+On every specific action that you consider worth being tracked, add this piece of Javascript :
+````
+dataLayer.push({
+  'event': 'my activation event'
+});
+````
+You can add as many custom event properties as you want.
+
+# Tracking configuration in GTM
+
+As you added the previous javascript snippets to your website / app, we can now capture those events in GTM.
+
+## Triggers
+Create 1 trigger for each event that is pushed in GTM's datalayer (select the type "Custom event") :
 - "Event - signup"
 - "Event - login"
-- "Event - purchase"
+- "Event - logout"
+- "Event - revenue"
+- "Event - my activation event"
 
-
+## Variables
+Create 1 variable for each event property set in the events (select the type "Data Layer variable") :
+- "datalayer - provider"
+- "datalayer - user_email"
+- "datalayer - user_id"
+- "datalayer - amount"
+- "datalayer - currency"
+- "datalayer - product"
+- "datalayer - type"
 
 # Integration with Hyperaktiv
 
