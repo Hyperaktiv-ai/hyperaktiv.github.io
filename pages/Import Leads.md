@@ -1,20 +1,21 @@
 ---
 layout: default
-title: Import Leads
-nav_order: 3
-description: "How to import leads into Hyperaktiv"
+title: Alternative import of leads
+nav_order: 5
+description: "How to import leads into Hyperaktiv without GTM / Amplitude"
 ---
 {% include variables.md %}
 
-# How to import a new lead in Hyperaktiv
-
 Leads can be imported into Hyperaktiv using 4 different ways :
-- automatically from Amplitude
+- automatically from Amplitude (recommended)
 - through the API
 - manually using the back-office
-- automatically from HubSpot
+- from HubSpot
 
-### Option 1 : API call
+Using GTM and Amplitude is recommended, as Hyperaktiv can measure their engagement, which is critical to segment them.
+But let's explore alternative options
+
+# Option 1 : API call
 
 1. In the back-office, add an API endpoint as an origin in your funnel ; a reference code is generated.
 2. Call [POST /leads]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
@@ -28,7 +29,7 @@ Body :
 }
 ```
 
-### Option 2 : Javascript
+## Javascript
 
 ```js
 fetch('https://app.hyperaktiv.ai/api/v1/leads?ref=YYY', {
