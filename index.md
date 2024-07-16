@@ -7,8 +7,11 @@ permalink: /
 
 # Introduction
 
-Hyperaktiv allows you to qualify your leads in real-time, and assign them a tailored customer onboarding journey.
-Hyperaktiv offers a back-office where you can setup your workspace, an API given access to all your resources, and a front-office for your leads if you want them to be asked to complete activities.
+Hyperaktiv helps you increase conversion by segmenting your leads based on :
+* their engagement on your website / app
+* how much they match your ICP (Ideal Customer Profile)
+
+Hyperaktiv offers a back-office where you can automate actions, but also monitor your funnel, and get a better understanding of who are your leads.
 
 # API
 
@@ -19,29 +22,52 @@ You can also browse and call our API with [SwaggerHub](https://app.swaggerhub.co
 
 # Terminology
 
-## Roles
+## Goals
 
-* Administrator : allows complete access to your workspace's back-office
-* Manager : allows access to the whole back-office but workspace settings
-* Lead : role assigned to new leads ; they have only access to the front-office, when activities are assigned to them
-* Stakeholder : can be assigned to users who are not leads but who require and access to the front-office (they can even be external to your organization)
+Hyperaktiv lets you choose what is the current focus of your business strategy :
+* Acquisition : increasing the amount of (good quality) leads in your funnel
+* Retention : increasing the engagement of signups
+* Conversion : increasing the amount of paying customers
 
 ## Lead
 
-A lead is a person who has been registered on Hyperaktiv ; the email of the lead is the key piece of information Hyperaktiv needs : depending on the information found online about the lead, the qualification algorithm implemented in Hyperaktiv will define the onboarding journey the lead will be assigned to, with tailored activities assigned.
+A lead is a person who has been visiting your website
 
-## Funnel
+## User
 
-A funnel is basically a workflow containing decision points, stages and activities. A stage is a group of Activities executed at the same time. Decisions allow you to define which stage should be triggered depending on specific conditions. Activities can be assigned to back-office users, leads, external stakeholders or automatically by Hyperaktiv. Here are a few examples of available activities : choosing a slot in Calendly, watching a video, verification of identity, signature of a document, etc.
+A lead who created an account on your product
 
-## Journey
+## Stage
 
-A journey is generated automatically by Hyperaktiv when a lead is assigned to a funnel. You can then track the progression of the customer onboarding journey through the back-office, and monitor which activities are blocked, completed or in progress. Once the journey is fully completed, the lead is considered "converted". Hyperaktiv offers analytics over completion and time spent of each activity.
+Defines the life cycle of a Lead :
+* Visitor : when they have anonymously visited the website
+* Signup : when they created an account
+* Trial : when they started a trial
+* Converted : when they made a purchase
+
+## Segment
+
+We classify leads in 4 different segments, depending on their :
+* engagement score : how much a lead is interested / invested in your website / app (relatively amongst the leads of the same stage)
+* ICP match : how much they match your Ideal Customer Profile
+
+There are 4 segments :
+* Champions : high engagement score, high ICP match
+* Regulars : high engagement score, low ICP match
+* Explorers : low engagement score, high ICP match
+* Strangers : low engagement score, low ICP match
+
+Hyperaktiv gives you recommendations to increase engagement of current leads, and increase the acquisition of Champions
+
+## Workflow
+
+A workflow is a set of automated actions which are executed automatically when a Lead reaches a new stage.
 
 ## DataPoint
 
-Journey-specific data is automatically made accessible by Hyperaktiv through data points. When the lead is registered, we automatically enrich data in the background based their email : revenue and size of their company, as well as the industry and sector, etc. You can also create your custom data points, and associate documents, text, amount, dates of any type of information to each journey. All data points associated to journey can be manipulated through the API, and be used in the lead qualification algorithm of the funnel aad fine-tune the customer onboarding journey.
+Any piece of information related to a lead.
 
-## Session
+## Enrichment
 
-You can create sessions through the API when you want to redirect your leads or external stakeholders to our front-office without asking them to use the login page. You can find more information about sessions [here](/Front-office%20session.html).
+Hyperaktiv can fetch information about your Leads (based on their email), in order to compute their ICP match, and give you better insights
+
