@@ -1,7 +1,7 @@
 ---
 layout: default
 title: GTM Setup
-nav_order: 5
+nav_order: 3
 description: "Google Tag Manager setup"
 ---
 {% include variables.md %}
