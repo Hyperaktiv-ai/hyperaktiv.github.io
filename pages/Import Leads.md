@@ -1,31 +1,18 @@
 ---
 layout: default
-title: Lead registration
+title: Import Leads
 nav_order: 3
-description: "How to register a new lead in Hyperaktiv"
+description: "How to import leads into Hyperaktiv"
 ---
 {% include variables.md %}
 
-# How to register a new lead in Hyperaktiv
+# How to import a new lead in Hyperaktiv
 
-Leads can be added to Hyperaktiv using 3 different ways :
-- manually using the back-office (menu "Leads", then "New" button)
-- programmatically using the API
-- leads can register themselves autonomously through a registration page
-When a lead is registered, and a funnel is assigned to them, their journey is automatically generated.
-
-In order to call this API endpoint, you need to know the id of the funnel you want to assign the lead to.
-
-## How do I find the id of a funnel
-
-You have 2 options to find the ``id`` of the funnel you want to register leads on :
-  * in the back-office, edit the funnel ; the URL is ``https://app.hyperaktiv.ai/p/funnels/edit/xxx``, where "xxx" is the ``id`` of the funnel.
-  * with an API client (like Swagger or Postman for example), find your funnel using [``GET /funnels``]({{ apiUrl }}#/funnels/get_funnels){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
-
-## Registration of a new lead
-
-The "JourneyData" attribute is optional ; you can use it in order to add data to the generated journey (the data points have to be created prior in your workspace).
-The "WebhookInput" attribute is optional ; you can use it in order to receive notification when specific events related to this lead occur.
+Leads can be imported into Hyperaktiv using 4 different ways :
+- automatically from Amplitude
+- through the API
+- manually using the back-office
+- automatically from HubSpot
 
 ### Option 1 : API call
 
