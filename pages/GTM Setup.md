@@ -15,7 +15,8 @@ Three steps :
 
 # Installation of Google Tag Manager
 
-Read this first : [Setup and install GTM](https://support.google.com/tagmanager/answer/6103696).
+Read this first : [Setup and install GTM](https://support.google.com/tagmanager/answer/6103696){:target="_blank"}{:rel="noopener noreferrer"}.
+
 It is recommended to create only one web container for both the website and the webapp.
 In case of mobile apps, there should be 1 container for iOS, another one for Android.
 We might also need a "server" container later, but let's see.
