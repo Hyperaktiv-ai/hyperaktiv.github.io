@@ -10,8 +10,9 @@ description: "Google Tag Manager setup"
 
 Three steps :
 1. Installation of Google Tag Manager
-2. Event tracking configuration in GTM
+2. Sending events from your website / webapp to GTM
 3. Integration with Hyperaktiv
+4. Tracking configuration in GTM
 
 # Installation of Google Tag Manager
 
@@ -31,7 +32,7 @@ NB :
 
 # Sending events from the website / app to GTM
 
-Inside your app, you will need to insert some code to send specific events to GTM.
+Inside your app, you will need to insert some code to send specific events to GTM. Don't worry if you're not a software developer, we're here to support you. Just ping us on [Slack community].
 
 ## Signup
 After a successful signup, add this piece of Javascript :
@@ -87,9 +88,25 @@ dataLayer.push({
 ````
 You can also add event properties if you want.
 
+# Integration with Hyperaktiv
+
+1. Request an authentication key from us on [Slack community]
+2. Create your Amplitude project : 
+   * [US based](https://app.amplitude.com/signup){:target="_blank"}{:rel="noopener noreferrer"}
+   * [EU based](https://app.eu.amplitude.com/signup){:target="_blank"}{:rel="noopener noreferrer"}
+3. Copy the API key, or leave the page open
+4. Go to :
+    1. "Data" in the top menu > "Destinations" > "Add destination"
+    2. Search for "BigQuery"
+    3. Check both checkboxes (it might be that the second one is not available yet, it's fine)
+    4. Choose a frequency of 3h, then "Next"
+    5. Dataset : put the name of your company
+    6. Service Account key : upload the service account file we provided, then "Next"
+    7. Data Destination Name : set "Hyperaktiv"
+
 # Tracking configuration in GTM
 
-As you added the previous javascript snippets to your website / app, we can now capture those events in GTM.
+As you added the previous Javascript snippets to your website / app, we can now capture those events in GTM.
 
 ## Triggers
 Create 1 trigger for each event that is pushed in GTM's datalayer (select the type ``Custom event``) :
@@ -104,7 +121,7 @@ You can also create triggers which are not based on datalayer events :
 * when a page is displayed
 
 Avoid selectors based on the text of a button / link, as this text can change (translations) ; instead, use css / xpath and ids.
-Ask for our support on Slack community if you struggle setting up triggers.
+Ask for our support on [Slack community] if you struggle setting up triggers.
 
 ## Variables
 Create 1 variable for each event property set in the events (select the type ``Data Layer variable``) :
@@ -116,51 +133,47 @@ Create 1 variable for each event property set in the events (select the type ``D
 - "datalayer - product"
 - "datalayer - type"
 
-# Integration with Hyperaktiv
+## Tags
 
-1. Create your Amplitude project : 
-   * [US based](https://app.amplitude.com/signup){:target="_blank"}{:rel="noopener noreferrer"}
-   * [EU based](https://app.eu.amplitude.com/signup){:target="_blank"}{:rel="noopener noreferrer"}
-2. Copy the API key, or leave the page open
-3. In GTM, install the Amplitude SDK template : create a new tag > open the Community Template Gallery > find ``Amplitude Analytics Browser SDK``
-4. Create a lookup table variable named ``Amplitude - API key``
+1. Install the Amplitude SDK template : create a new tag > open the Community Template Gallery > find ``Amplitude Analytics Browser SDK``
+2. Create a lookup table variable named ``Amplitude - API key``
    * set the API key of the Amplitude project, associated with the hostname of your website
    * leave the default value blank
    * (if you have multiple environments for your website/webapp, we recommend to create a different Amplitude project --> so you can set a different API key associated to the env domain)
-5. Create the following tags with type ``Amplitude Analytics Browser SDK`` :
-    * "Amplitude - init" :
+3. Create the following tags with type ``Amplitude Analytics Browser SDK`` :
+    1. "Amplitude - init" :
         * Tag type : ``Initialize (init)``
         * API Key : ``{{Amplitude - API key}}``
         * Triggering : ``Initialisation - All Pages``
-    * "Amplitude - signup" :
+    2. "Amplitude - signup" :
         * Tag type : ``Track Event (track)``
         * Event type : ``signup``
         * Individual Event Properties :
             * Property Name : ``provider``
             * Property Value : ``{{datalayer - provider}}``
         * Triggering : ``Event - signup``
-    * "Amplitude - login" :
+    3. "Amplitude - login" :
         * Tag type : ``Track Event (track)``
         * Event type : ``login``
         * Individual Event Properties :
             * Property Name : ``provider``
             * Property Value : ``{{datalayer - provider}}``
         * Triggering : ``Event - login``
-    * "Amplitude - setUserId" :
+    4. "Amplitude - setUserId" :
         * Tag type : ``Set User ID (setUserId)``
         * User ID : ``{{datalayer - user_id}}``
         * Triggering : ``Event - signup`` and ``Event - login``
-    * "Amplitude - identify" :
+    5. "Amplitude - identify" :
         * Tag type : ``Set User Properties (identify)``
         * Operation :
             * Method Call : ``Set``
             * User Property : ``user_email``
             * Value : ``{{datalayer - user_email}}``
         * Triggering : ``Event - signup`` and ``vent - login``
-    * "Amplitude - setUserId" :
+    6. "Amplitude - setUserId" :
         * Tag type : ``Reset User (reset)``
         * Triggering : ``Event - logout``
-    * "Amplitude - revenue" :
+    7. "Amplitude - revenue" :
         * Tag type : ``Track Revenue (revenue)``
         * Product ID : ``{{datalayer - product}}``
         * Product Price : ``{{datalayer - amount}}``
@@ -171,8 +184,14 @@ Create 1 variable for each event property set in the events (select the type ``D
             * Property Name : ``currency``
             * Property Value : ``{{datalayer - currency}}``
         * Triggering : ``Event - purchase``
-    * "Amplitude - custom events" :
+    8. "Amplitude - custom events" :
         * Tag type : ``Track Event (track)``
         * Event type : ``{{Event}}``
         * Triggering : ``Event - my custom event`` and all other custom events you created
+
+Everything is now ready.
+Just use the "Preview" mode in GTM to check that all events are properly captured by GTM.
+
 {% endraw %}
+
+[Slack community]: https://join.slack.com/t/hyperaktivcommunity/shared_invite/zt-2gxxifo1f-N1lKn5~V32Hgvpx4~oi4IA
