@@ -102,6 +102,7 @@ Create 1 trigger for each event that is pushed in GTM's datalayer (select the ty
 You can also create triggers which are not based on datalayer events :
 * when a button / link is clicked
 * when a page is displayed
+
 Avoid selectors based on the text of a button / link, as this text can change (translations) ; instead, use css / xpath and ids.
 Ask for our support on Slack community if you struggle setting up triggers.
 
@@ -129,7 +130,7 @@ Create 1 variable for each event property set in the events (select the type "Da
 5. Create the following Amplitude tags :
 * "Amplitude - init" :
   * Tag type : ``Initialize (init)``
-  * API Key : ``{{Amplitude - API key}}``
+  * API Key : ``\{\{Amplitude - API key}}``
   * Triggering : ``Initialisation - All Pages``
 * "Amplitude - signup" :
   * Tag type : ``Track Event (track)``
