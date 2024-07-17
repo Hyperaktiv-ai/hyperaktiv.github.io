@@ -130,7 +130,7 @@ Create 1 variable for each event property set in the events (select the type "Da
 5. Create the following Amplitude tags :
 * "Amplitude - init" :
   * Tag type : ``Initialize (init)``
-  * API Key : ``\{\{Amplitude - API key}}``
+  * API Key : ``{{{{Amplitude - API key}}``
   * Triggering : ``Initialisation - All Pages``
 * "Amplitude - signup" :
   * Tag type : ``Track Event (track)``
@@ -143,8 +143,8 @@ Create 1 variable for each event property set in the events (select the type "Da
   * Tag type : ``Track Event (track)``
   * Event type : ``login``
   * Individual Event Properties :
-    * Property Name : ``provider``
-    * Property Value : ``{{datalayer - provider}}``
+  ** Property Name : ``provider``
+  ** Property Value : ``{{datalayer - provider}}``
   * Triggering : ``Event - login``
 * "Amplitude - setUserId" :
   * Tag type : ``Set User ID (setUserId)``
