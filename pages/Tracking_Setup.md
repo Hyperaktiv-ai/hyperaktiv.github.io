@@ -1,8 +1,8 @@
 ---
 layout: default
-title: GTM Setup
+title: Trackig Setup
 nav_order: 3
-description: "Google Tag Manager setup"
+description: "Setup of a tracking infrastructure"
 ---
 {% include variables.md %}
 {% raw %}
@@ -11,7 +11,7 @@ description: "Google Tag Manager setup"
 Three steps :
 1. Installation of Google Tag Manager
 2. Sending events from your website / webapp to GTM
-3. Integration with Hyperaktiv
+3. Integration with Hyperaktiv via Amplitude
 4. Tracking configuration in GTM
 
 # Installation of Google Tag Manager
