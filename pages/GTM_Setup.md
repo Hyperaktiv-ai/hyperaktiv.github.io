@@ -145,14 +145,14 @@ Create 1 variable for each event property set in the events (select the type ``D
         * Tag type : ``Initialize (init)``
         * API Key : ``{{Amplitude - API key}}``
         * Triggering : ``Initialisation - All Pages``
-    2. "Amplitude - signup" :
+    2. "Amplitude - 'signup'" :
         * Tag type : ``Track Event (track)``
         * Event type : ``signup``
         * Individual Event Properties :
             * Property Name : ``provider``
             * Property Value : ``{{datalayer - provider}}``
         * Triggering : ``Event - signup``
-    3. "Amplitude - login" :
+    3. "Amplitude - 'login'" :
         * Tag type : ``Track Event (track)``
         * Event type : ``login``
         * Individual Event Properties :
@@ -170,7 +170,7 @@ Create 1 variable for each event property set in the events (select the type ``D
             * User Property : ``user_email``
             * Value : ``{{datalayer - user_email}}``
         * Triggering : ``Event - signup`` and ``vent - login``
-    6. "Amplitude - setUserId" :
+    6. "Amplitude - reset" :
         * Tag type : ``Reset User (reset)``
         * Triggering : ``Event - logout``
     7. "Amplitude - revenue" :
