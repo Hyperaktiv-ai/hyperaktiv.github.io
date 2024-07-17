@@ -147,32 +147,32 @@ Create 1 variable for each event property set in the events (select the type "Da
       * Property Value : ``{{datalayer - provider}}``
    * Triggering : ``Event - login``
 * "Amplitude - setUserId" :
-  * Tag type : ``Set User ID (setUserId)``
-  * User ID : ``{{datalayer - user_id}}``
-  * Triggering : ``Event - signup`` and ``Event - login``
+   * Tag type : ``Set User ID (setUserId)``
+   * User ID : ``{{datalayer - user_id}}``
+   * Triggering : ``Event - signup`` and ``Event - login``
 * "Amplitude - identify" :
-  * Tag type : ``Set User Properties (identify)``
-  * Operation :
-    * Method Call : ``Set``
-    * User Property : ``user_email``
-    * Value : ``{{datalayer - user_email}}``
-  * Triggering : ``Event - signup`` and ``vent - login``
+   * Tag type : ``Set User Properties (identify)``
+   * Operation :
+      * Method Call : ``Set``
+      * User Property : ``user_email``
+      * Value : ``{{datalayer - user_email}}``
+   * Triggering : ``Event - signup`` and ``vent - login``
 * "Amplitude - setUserId" :
-  * Tag type : ``Reset User (reset)``
-  * Triggering : ``Event - logout``
+   * Tag type : ``Reset User (reset)``
+   * Triggering : ``Event - logout``
 * "Amplitude - revenue" :
-  * Tag type : ``Track Revenue (revenue)``
-  * Product ID : ``{{datalayer - product}}``
-  * Product Price : ``{{datalayer - amount}}``
-  * Product Quantity : ``1``
-  * Revenue : ``{{datalayer - amount}}``
-  * Revenue Type : ``{{datalayer - type}}``
-  * Event Properties :
-    * Property Name : ``currency``
-    * Property Value : ``{{datalayer - currency}}``
-  * Triggering : ``Event - purchase``
+   * Tag type : ``Track Revenue (revenue)``
+   * Product ID : ``{{datalayer - product}}``
+   * Product Price : ``{{datalayer - amount}}``
+   * Product Quantity : ``1``
+   * Revenue : ``{{datalayer - amount}}``
+   * Revenue Type : ``{{datalayer - type}}``
+   * Event Properties :
+      * Property Name : ``currency``
+      * Property Value : ``{{datalayer - currency}}``
+   * Triggering : ``Event - purchase``
 * "Amplitude - custom events" :
-  * Tag type : ``Track Event (track)``
-  * Event type : ``{{Event}}``
-  * Triggering : ``Event - my custom event`` and all other custom events you created
+   * Tag type : ``Track Event (track)``
+   * Event type : ``{{Event}}``
+   * Triggering : ``Event - my custom event`` and all other custom events you created
 {% endraw %}
