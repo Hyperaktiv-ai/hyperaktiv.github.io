@@ -5,7 +5,7 @@ nav_order: 3
 description: "Google Tag Manager setup"
 ---
 {% include variables.md %}
-
+{% raw %}
 # Introduction
 
 Three steps :
@@ -119,33 +119,33 @@ Create 1 variable for each event property set in the events (select the type "Da
 # Integration with Hyperaktiv
 
 1. Create your Amplitude project : 
-  * [US based](https://app.amplitude.com/signup)
-  * [EU based](https://app.eu.amplitude.com/signup)
+   * [US based](https://app.amplitude.com/signup)
+   * [EU based](https://app.eu.amplitude.com/signup)
 2. Copy the API key, or leave the page open
 3. In GTM, install the Amplitude SDK template : create a new tag > open the Community Template Gallery > find "Amplitude Analytics Browser SDK"
 4. Create a lookup table variable named "Amplitude - API key"
-  * set the API key of the Amplitude project, associated with the hostname of your website
+   * set the API key of the Amplitude project, associated with the hostname of your website
   * leave the default value blank
-  * (if you have multiple environments for your website/webapp, we recommend to create a different Amplitude project --> so you can set a different API key associated to the env domain)
-5. Create the following Amplitude tags :
+   * (if you have multiple environments for your website/webapp, we recommend to create a different Amplitude project --> so you can set a different API key associated to the env domain)
+5. Create the following tags with type "Amplitude Analytics Browser SDK" :
 * "Amplitude - init" :
-  * Tag type : ``Initialize (init)``
-  * API Key : ``{{{{Amplitude - API key}}``
-  * Triggering : ``Initialisation - All Pages``
+   * Tag type : ``Initialize (init)``
+   * API Key : ``{{Amplitude - API key}}``
+   * Triggering : ``Initialisation - All Pages``
 * "Amplitude - signup" :
-  * Tag type : ``Track Event (track)``
-  * Event type : ``signup``
-  * Individual Event Properties :
-    * Property Name : ``provider``
-    * Property Value : ``{{datalayer - provider}}``
-  * Triggering : ``Event - signup``
+   * Tag type : ``Track Event (track)``
+   * Event type : ``signup``
+   * Individual Event Properties :
+      * Property Name : ``provider``
+      * Property Value : ``{{datalayer - provider}}``
+   * Triggering : ``Event - signup``
 * "Amplitude - login" :
-  * Tag type : ``Track Event (track)``
-  * Event type : ``login``
-  * Individual Event Properties :
-  ** Property Name : ``provider``
-  ** Property Value : ``{{datalayer - provider}}``
-  * Triggering : ``Event - login``
+   * Tag type : ``Track Event (track)``
+   * Event type : ``login``
+   * Individual Event Properties :
+      * Property Name : ``provider``
+      * Property Value : ``{{datalayer - provider}}``
+   * Triggering : ``Event - login``
 * "Amplitude - setUserId" :
   * Tag type : ``Set User ID (setUserId)``
   * User ID : ``{{datalayer - user_id}}``
@@ -175,3 +175,4 @@ Create 1 variable for each event property set in the events (select the type "Da
   * Tag type : ``Track Event (track)``
   * Event type : ``{{Event}}``
   * Triggering : ``Event - my custom event`` and all other custom events you created
+{% endraw %}
