@@ -125,54 +125,54 @@ Create 1 variable for each event property set in the events (select the type ``D
 3. In GTM, install the Amplitude SDK template : create a new tag > open the Community Template Gallery > find ``Amplitude Analytics Browser SDK``
 4. Create a lookup table variable named ``Amplitude - API key``
    * set the API key of the Amplitude project, associated with the hostname of your website
-  * leave the default value blank
+   * leave the default value blank
    * (if you have multiple environments for your website/webapp, we recommend to create a different Amplitude project --> so you can set a different API key associated to the env domain)
 5. Create the following tags with type ``Amplitude Analytics Browser SDK`` :
-* "Amplitude - init" :
-    * Tag type : ``Initialize (init)``
-    * API Key : ``{{Amplitude - API key}}``
-    * Triggering : ``Initialisation - All Pages``
-* "Amplitude - signup" :
-    * Tag type : ``Track Event (track)``
-    * Event type : ``signup``
-    * Individual Event Properties :
-        * Property Name : ``provider``
-        * Property Value : ``{{datalayer - provider}}``
-    * Triggering : ``Event - signup``
-* "Amplitude - login" :
-    * Tag type : ``Track Event (track)``
-    * Event type : ``login``
-    * Individual Event Properties :
-        * Property Name : ``provider``
-        * Property Value : ``{{datalayer - provider}}``
-    * Triggering : ``Event - login``
-* "Amplitude - setUserId" :
-    * Tag type : ``Set User ID (setUserId)``
-    * User ID : ``{{datalayer - user_id}}``
-    * Triggering : ``Event - signup`` and ``Event - login``
-* "Amplitude - identify" :
-    * Tag type : ``Set User Properties (identify)``
-    * Operation :
-        * Method Call : ``Set``
-        * User Property : ``user_email``
-        * Value : ``{{datalayer - user_email}}``
-    * Triggering : ``Event - signup`` and ``vent - login``
-* "Amplitude - setUserId" :
-    * Tag type : ``Reset User (reset)``
-    * Triggering : ``Event - logout``
-* "Amplitude - revenue" :
-    * Tag type : ``Track Revenue (revenue)``
-    * Product ID : ``{{datalayer - product}}``
-    * Product Price : ``{{datalayer - amount}}``
-    * Product Quantity : ``1``
-    * Revenue : ``{{datalayer - amount}}``
-    * Revenue Type : ``{{datalayer - type}}``
-    * Event Properties :
-        * Property Name : ``currency``
-        * Property Value : ``{{datalayer - currency}}``
-    * Triggering : ``Event - purchase``
-* "Amplitude - custom events" :
-    * Tag type : ``Track Event (track)``
-    * Event type : ``{{Event}}``
-    * Triggering : ``Event - my custom event`` and all other custom events you created
+    * "Amplitude - init" :
+        * Tag type : ``Initialize (init)``
+        * API Key : ``{{Amplitude - API key}}``
+        * Triggering : ``Initialisation - All Pages``
+    * "Amplitude - signup" :
+        * Tag type : ``Track Event (track)``
+        * Event type : ``signup``
+        * Individual Event Properties :
+            * Property Name : ``provider``
+            * Property Value : ``{{datalayer - provider}}``
+        * Triggering : ``Event - signup``
+    * "Amplitude - login" :
+        * Tag type : ``Track Event (track)``
+        * Event type : ``login``
+        * Individual Event Properties :
+            * Property Name : ``provider``
+            * Property Value : ``{{datalayer - provider}}``
+        * Triggering : ``Event - login``
+    * "Amplitude - setUserId" :
+        * Tag type : ``Set User ID (setUserId)``
+        * User ID : ``{{datalayer - user_id}}``
+        * Triggering : ``Event - signup`` and ``Event - login``
+    * "Amplitude - identify" :
+        * Tag type : ``Set User Properties (identify)``
+        * Operation :
+            * Method Call : ``Set``
+            * User Property : ``user_email``
+            * Value : ``{{datalayer - user_email}}``
+        * Triggering : ``Event - signup`` and ``vent - login``
+    * "Amplitude - setUserId" :
+        * Tag type : ``Reset User (reset)``
+        * Triggering : ``Event - logout``
+    * "Amplitude - revenue" :
+        * Tag type : ``Track Revenue (revenue)``
+        * Product ID : ``{{datalayer - product}}``
+        * Product Price : ``{{datalayer - amount}}``
+        * Product Quantity : ``1``
+        * Revenue : ``{{datalayer - amount}}``
+        * Revenue Type : ``{{datalayer - type}}``
+        * Event Properties :
+            * Property Name : ``currency``
+            * Property Value : ``{{datalayer - currency}}``
+        * Triggering : ``Event - purchase``
+    * "Amplitude - custom events" :
+        * Tag type : ``Track Event (track)``
+        * Event type : ``{{Event}}``
+        * Triggering : ``Event - my custom event`` and all other custom events you created
 {% endraw %}
