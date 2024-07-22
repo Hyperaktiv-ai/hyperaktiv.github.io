@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tracking infrastructure
-nav_order: 4
+nav_order: 2
 description: "How to track your leads's behavior"
 ---
 {% include variables.md %}
