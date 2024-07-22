@@ -1,7 +1,7 @@
 ---
 layout: default
 title: API authentication
-nav_order: 2
+nav_order: 5
 description: "API authentication"
 ---
 
