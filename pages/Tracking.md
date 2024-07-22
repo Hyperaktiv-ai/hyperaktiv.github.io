@@ -28,7 +28,7 @@ There are a few great tools on the market today. But unfortunately, not one of t
 Let's start here : let's dissociate "how/what to track" from "what to do with the data"
 
 ## How/what to track
-On your website / webapp / mobile app, every time a lead is performing an action (opening a page, clicking on a button ...), an event will be recorded. This event will contain properties (timestamp, identification of the lead, information about their device / web browser, language, location etc). These events are meant to be stored by each tracking software so then it will be possible to get some monitoring.
+On your website / webapp / mobile app, every time a lead is performing an action (opening a page, clicking on a button ...), an event will be recorded. This event contains properties (timestamp, identification of the lead, information about their device / web browser, language, location etc). These events are meant to be stored by each tracking software so then it will be possible to get some monitoring.
 
 Let's list a few tracking well-known tracking softwares :
 * [Google Analytics]
@@ -39,12 +39,17 @@ Let's list a few tracking well-known tracking softwares :
 * [Microsoft Clarity]
 * [Segment]
 
-But before diving into each of them, let's set a first principle :
-As you will probably need (right away, or later) several, **you don't want to hard-code each of their specific SDK in your website / app**.
-This would lead to frequent updates, bug fixes -> higher maintenance cost and technical complexity.
-Instead, we strongly recommend to use [Google Tag Manager] on your website and app to manage all your tracking snippets dynamically.
-[Google Tag Manager] is free, lightweight, and very stable (no code changes). Your dev team will be happy with it.
-Plus you will be able to activate / deactivate / add / configure tracking softwares dynamically with a web-based console, **without any code change**.
+We **do not recommend** to insert the tracking code of any of those softwares directly in your website / webapp. Instead, you should use [Google Tag Manager].
+
+### Google Tag Manager
+
+Why we recommend to use [Google Tag Manager] :
+* Flexibility and speed : GTM offers a web console where you can dynamically add / remove tracking codes without touching the code ; the deployment takes 1s, and there is no impact on your code
+* Consent mode : GTM offers a simple way to handle the consent mode for your visitors / users
+* SEO : the pages load faster cause GTM injects the scripts asynchronously
+* Maintenability : when a tracking software publishes a new version of their SDK, GTM notifies you, and you just need to update the template in the webconsole
+* Historization : all changes made are logged in GTM, so you can see who changed what and when, and if necessary rollback the configuration
+* No hassle : GTM is free, their SDK is extremely stable, and it doesn't retain data (no GDPR related issue)
 
 ## What to do with the data ?
 
