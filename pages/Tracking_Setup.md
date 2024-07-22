@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Trackig Setup
+title: Tracking Setup
 nav_order: 3
-description: "Setup of a tracking infrastructure"
+description: "How to implement your tracking infrastructure"
 ---
 {% include variables.md %}
 {% raw %}
