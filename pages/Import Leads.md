@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Alternative import of leads
-nav_order: 5
+title: Import of leads
+nav_order: 4
 description: "How to import leads into Hyperaktiv without GTM / Amplitude"
 ---
 {% include variables.md %}
