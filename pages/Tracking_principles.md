@@ -31,7 +31,7 @@ Let's start here : let's dissociate "how/what to track" from "what to do with th
 On your website / webapp / mobile app, every time a lead is performing an action (opening a page, clicking on a button ...), an event will be recorded. This event contains properties (timestamp, identification of the lead, information about their device / web browser, language, location etc). These events are meant to be stored by each tracking software so then it will be possible to get some monitoring.
 
 Let's list a few tracking well-known tracking softwares :
-* [Google Analytics]
+* [Google Analytics]{:target="_blank"}{:rel="noopener noreferrer"}
 * [Hotjar]
 * [Mixpanel]
 * [Amplitude]
@@ -81,7 +81,7 @@ Hyperaktiv is 100% focused on giving you the right recommendations. Hyperaktiv c
 
 How to setup requires only a few minutes ; let's start.
 
-[Hotjar]: https://hotjar.com/
+[Hotjar]: https://hotjar.com/{:target="_blank"}{:rel="noopener noreferrer"}
 [Mixpanel]: https://mixpanel.com/
 [Amplitude]: https://amplitude.com/
 [Posthog]: https://posthog.com/
