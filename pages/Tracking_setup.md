@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tracking Setup
+title: Tracking setup
 nav_order: 3
 description: "How to implement your tracking infrastructure"
 ---
