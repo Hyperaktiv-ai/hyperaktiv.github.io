@@ -12,6 +12,11 @@ Hyperaktiv helps you increase conversion by segmenting your leads based on :
 * how much they match your ICP (Ideal Customer Profile)
 
 Hyperaktiv offers a back-office where you can automate actions, but also monitor your funnel, and get a better understanding of who are your leads.
+In order to analyse the performance of your funnel, we'll capture everything your website's visitors and app users do, thanks to a simple tracking infrastructure.
+
+# Tracking infrastructure
+
+We can implement the tracking infrastructure for you (just ping us on [Slack]), or you can implement it by yourself using this [documentation](/Tracking_principles.html)
 
 # API
 
@@ -71,3 +76,4 @@ Any piece of information related to a lead.
 
 Hyperaktiv can fetch information about your Leads (based on their email), in order to compute their ICP match, and give you better insights
 
+[Slack community]: https://join.slack.com/t/hyperaktivcommunity/shared_invite/zt-2gxxifo1f-N1lKn5~V32Hgvpx4~oi4IA
