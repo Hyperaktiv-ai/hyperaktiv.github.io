@@ -16,7 +16,7 @@ In order to analyse the performance of your funnel, we'll capture everything you
 
 # Tracking infrastructure
 
-We can implement the tracking infrastructure for you (just ping us on [Slack]), or you can implement it by yourself using this [documentation](/Tracking_principles.html)
+We can implement the tracking infrastructure for you (just ping us on [Slack]), or you can implement it by yourself using this [documentation](/Tracking_principles)
 
 # API
 
