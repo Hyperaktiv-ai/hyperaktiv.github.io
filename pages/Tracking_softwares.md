@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tracking softwares
-nav_order: 2
+nav_order: 4
 description: "Which tracking software ?"
 ---
 {% include variables.md %}
