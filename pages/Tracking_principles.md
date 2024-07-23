@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Tracking infrastructure
+title: Tracking principles
 nav_order: 2
 description: "How to track your leads's behavior"
 ---
@@ -20,7 +20,7 @@ Good news : Hyperaktiv has a simple answer to all those questions.
 Spoiler alert : you don't need to know how to code ; and the whole thing should not take more than a few minutes.
 
 Here you will find explanations.
-If you want to directly jump to the step-by-step installation, it's [here]()
+If you want to directly jump to the step-by-step installation, it's [here](/Tracking_setup.html)
 
 # Which tools ?
 
