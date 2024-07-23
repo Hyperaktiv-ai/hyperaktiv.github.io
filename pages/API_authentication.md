@@ -1,9 +1,12 @@
 ---
 layout: default
-title: API authentication
-nav_order: 5
-description: "API authentication"
+title: API
+nav_order: 4
+description: "API"
 ---
+{% include variables.md %}
+
+The recommended way to import leads into Hyperaktiv is to use the [tracking](/pages/Tracking_principles), as it will be possible to measure their engagement. But you can also create leads manually from the back-office, import leads from HubSpot, or use our API 
 
 # API authentication
 
@@ -20,3 +23,53 @@ Each call to our API require the following header (where ``[YOUR_API_KEY]`` has 
 ````
 "Authorization": "Bearer [YOUR_API_KEY]"
 ````
+
+# Create a lead
+
+1. In the back-office, add an API endpoint as an origin in your funnel ; a reference code is generated.
+2. Call [POST /leads]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
+
+The reference of the origin has to be set as "ref" parameter. You can find the reference in the back-office by opening the funnel, and clicking on the API origin.
+
+Body :
+```json
+{
+    "Email": "johndoe@gmail.com"
+}
+```
+
+## Javascript
+
+```js
+fetch('https://app.hyperaktiv.ai/api/v1/leads?ref=YYY', {
+    method: 'POST',
+    headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+        'Authorization': 'Bearer XXX'
+    },
+    body: JSON.stringify({ "Email": "johndoe@gmail.com" }) })
+   .then(response => response.json())
+   .then(response => console.log(JSON.stringify(response)))
+```
+
+# Can I send more information about my lead 
+
+Yes, it's possible to send more information about your lead. Details can be found [here]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"}.
+
+Body :
+```json
+{
+    "Email": "johndoe@gmail.com",
+    "Firstname": "John",
+    "Lastname": "Doe",
+    "PhoneNumber": "+1 (800) 555‑0175",
+    "RedirectURL": "https://www.myapp.com",
+    "JourneyData" :[
+        {
+            "Name": "My datapoint",
+            "Value": "example"
+        }
+    ]
+}
+```
