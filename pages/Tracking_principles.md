@@ -30,16 +30,8 @@ Let's start here : let's dissociate "how/what to track" from "what to do with th
 ## How/what to track
 On your website / webapp / mobile app, every time a lead is performing an action (opening a page, clicking on a button ...), an event will be recorded. This event contains properties (timestamp, identification of the lead, information about their device / web browser, language, location etc). These events are meant to be stored by each tracking software so then it will be possible to get some monitoring.
 
-Let's list a few tracking well-known tracking softwares :
-* [Google Analytics]
-* [Hotjar]
-* [Mixpanel]
-* [Amplitude]
-* [Posthog]
-* [Microsoft Clarity]
-* [Segment]
-
-We **do not recommend** to insert the tracking code of any of those softwares directly in your website / webapp. Instead, you should use [Google Tag Manager].
+You can find more information about tracking software [here](/pageS/Tracking_softwares)
+We **do not recommend** to insert the code of tracking softwares directly in your website / webapp. Instead, you should use [Google Tag Manager].
 
 ### Google Tag Manager
 
