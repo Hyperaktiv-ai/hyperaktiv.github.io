@@ -8,7 +8,7 @@ description: "How to implement your tracking infrastructure"
 {% raw %}
 # Introduction
 
-Three steps :
+Four steps :
 1. Installation of Google Tag Manager
 2. Sending events from your website / webapp to GTM
 3. Integration with Hyperaktiv via Amplitude
