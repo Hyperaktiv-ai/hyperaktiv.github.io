@@ -20,7 +20,7 @@ Good news : Hyperaktiv has a simple answer to all those questions.
 Spoiler alert : you don't need to know how to code ; and the whole thing should not take more than a few minutes.
 
 Here you will find explanations.
-If you want to directly jump to the step-by-step installation, it's [here](/Tracking_setup.html)
+If you want to directly jump to the step-by-step installation, it's [here](/Tracking_setup)
 
 # Which tools ?
 
