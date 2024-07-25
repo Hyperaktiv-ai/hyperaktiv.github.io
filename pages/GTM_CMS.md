@@ -22,5 +22,5 @@ If you're using a CMS (Content Management System), the installation of [Google T
 
 ## Webflow
 
-Here is the {documentation](https://webflow.com/blog/integrating-google-tag-manager-with-google-analytics-in-webflow)
+Here is the [documentation](https://webflow.com/blog/integrating-google-tag-manager-with-google-analytics-in-webflow)
 
