@@ -6,7 +6,10 @@ description: "API"
 ---
 {% include variables.md %}
 
-The recommended way to import leads into Hyperaktiv is to use the [tracking](/pages/Tracking_principles), as it will be possible to measure their engagement. But you can also create leads manually from the back-office, import leads from HubSpot, or use our API 
+# Access to API
+
+[Postman](http://api.hyperaktiv.ai/)
+[Swagger](https://app.swaggerhub.com/apis/Hyperaktiv-ai/api)
 
 # API authentication
 
