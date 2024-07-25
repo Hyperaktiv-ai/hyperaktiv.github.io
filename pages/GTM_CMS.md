@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Tracking principles
-nav_order: 2
-description: "How to track your leads's behavior"
+title: GTM with a CMS
+nav_order: 3
+description: "How to use Google Tag Manager with a CMS"
 ---
 {% include variables.md %}
 
 # Introduction
 
-If you're using a CMS, the installation of [Google Tag Manager] is specific.
+If you're using a CMS (Content Management System), the installation of [Google Tag Manager] is specific.
 
 ## Framer
 
