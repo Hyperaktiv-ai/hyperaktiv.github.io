@@ -3,6 +3,7 @@ layout: default
 title: Tracking setup
 nav_order: 3
 description: "How to implement your tracking infrastructure"
+has_children: true
 ---
 {% include variables.md %}
 {% raw %}
