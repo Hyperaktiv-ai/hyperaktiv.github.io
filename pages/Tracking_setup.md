@@ -92,7 +92,7 @@ You can also add event properties if you want.
 # Integration with Hyperaktiv
 
 1. Request an authentication key from us on [Slack community]
-2. Create your Amplitude project : 
+2. Create a project in [Amplitude] : 
    * [US based](https://app.amplitude.com/signup){:target="_blank"}{:rel="noopener noreferrer"}
    * [EU based](https://app.eu.amplitude.com/signup){:target="_blank"}{:rel="noopener noreferrer"}
 3. Copy the API key, or leave the page open
