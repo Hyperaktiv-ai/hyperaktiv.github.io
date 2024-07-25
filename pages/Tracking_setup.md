@@ -28,7 +28,7 @@ You can test that the container is deployed properly using the "Preview" in GTM,
 You might need to disable any adblocker in the webbrowser, cause they might block GTM script from being executed.
 
 NB :
-- In case of a website built with a CMS, the installation might be a bit different ; [follow these steps](/pages/CTM_CMS) ; use the Preview to ensure that the container is well deployed
+- In case of a website built with a CMS, the installation might be a bit different ; [follow these steps](/pages/GTM_CMS) ; use the Preview to ensure that the container is well deployed
 - In case there is already some hard-coded tags implemented, we recommend to migrate the existing tags to [Google Tag Manager], and then remove the old hard-coded tracking tags.
 
 # Sending events from the website / app to GTM
