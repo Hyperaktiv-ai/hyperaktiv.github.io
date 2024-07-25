@@ -8,7 +8,7 @@ description: "API"
 
 # Access to API
 
-[Postman](http://api.hyperaktiv.ai/)
+Our API is accessible here : [api.hyperaktiv.ai](http://api.hyperaktiv.ai/)
 
 [Swagger](https://app.swaggerhub.com/apis/Hyperaktiv-ai/api)
 
