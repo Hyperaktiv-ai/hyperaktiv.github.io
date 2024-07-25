@@ -8,8 +8,6 @@ repository: hyperaktiv-ai/hyperaktiv.github.io # for github-metadata
 
 # External navigation links
 nav_external_links:
-  - title: API (swagger)
-    url: https://app.swaggerhub.com/apis-docs/Hyperaktiv/api
   - title: App
     url: https://app.hyperaktiv.ai
   - title: Website
