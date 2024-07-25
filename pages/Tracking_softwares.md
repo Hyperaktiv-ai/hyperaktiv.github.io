@@ -61,11 +61,3 @@ If you're a data analyst, and you love to spend time building charts
 If you're working in growth / marketing / sales, and you don't want to waste your time :
 * Hyperaktiv : we built this tool for you
 
-[Hotjar]: https://hotjar.com/
-[Mixpanel]: https://mixpanel.com/
-[Amplitude]: https://amplitude.com/
-[Posthog]: https://posthog.com/
-[Microsoft Clarity]: https://clarity.microsoft.com/
-[Segment]: https://segment.com/
-[Google Analytics]: https://analytics.google.com/
-[Google Tag Manager]: https://tagmanager.google.com/
