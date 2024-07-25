@@ -12,7 +12,7 @@ has_children: true
 Four steps :
 1. Installation of [Google Tag Manager]
 2. Sending events from your website / webapp to GTM
-3. Integration with Hyperaktiv via Amplitude
+3. Integration with Hyperaktiv
 4. Tracking configuration in GTM
 
 # Installation of Google Tag Manager
