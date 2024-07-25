@@ -1,7 +1,8 @@
 ---
 layout: default
 title: GTM with a CMS
-nav_order: 3
+parent: Tracking setup
+nav_order: 1
 description: "How to use Google Tag Manager with a CMS"
 ---
 {% include variables.md %}
