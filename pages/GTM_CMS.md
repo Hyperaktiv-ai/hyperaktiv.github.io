@@ -11,6 +11,20 @@ description: "How to use Google Tag Manager with a CMS"
 
 If you're using a CMS (Content Management System), the installation of [Google Tag Manager] is specific.
 
+## Bubble
+
+Bubble offers the possibility to customize the ``header`` and the ``body`` only if you have a paid subscription. You can also use a (free) plugin
+
+### In-house feature
+
+1. Go to "Settings" > "SEO / metatags"
+2. In section "SEO settings", you can customize the header and body
+
+### With a (free) plugin
+
+1. Install [this plugin](https://bubble.io/plugin/google-tag-manager-1591196268063x958661259682644000) in your Bubble project
+2. Go to "Plugins", and set your GTM container id (for example ``GTM-12345678``) in "GTM Container ID (headers)"
+
 ## Framer
 
 1. In [Google Tag Manager], open the container you want to associate with your website (create one if none exists for this website), and click on ``Admin``, then ``Install Google Tag Manager`` ; keep this window open
