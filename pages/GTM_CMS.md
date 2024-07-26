@@ -18,7 +18,7 @@ Bubble offers the possibility to customize the ``header`` and the ``body`` only 
 ### In-house feature
 
 1. Go to "Settings" > "SEO / metatags"
-2. In section "SEO settings", you can customize the header and body
+2. In section "SEO settings", you can customize the ``header`` and ``body``
 
 ### With a (free) plugin
 
