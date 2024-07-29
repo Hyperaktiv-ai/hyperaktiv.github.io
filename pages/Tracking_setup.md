@@ -67,6 +67,14 @@ dataLayer.push({
 });
 ````
 
+## Trial started
+When your user started a trial, add this piece of Javascript :
+````
+dataLayer.push({
+ 'event': 'trial'
+ });
+````
+
 ## Purchase
 When your user finalized a subscription / purchase, add this piece of Javascript :
 ````
