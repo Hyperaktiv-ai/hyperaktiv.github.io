@@ -113,7 +113,7 @@ Especially if you're using a reactive webapp, you can push a notification from t
 #### 3. Amplitude API
 Here is the [full documentation](https://amplitude.com/docs/apis/analytics/http-v2#request)
 
-In a nutshell :
+Here is a shorter version :
 ``POST`` on ``https://api.amplitude.com/2/httpapi`` (US projects) or ``https://api.eu.amplitude.com/2/httpapi`` (EU projects)
 Headers : ``Content-Type: application/json``
 
