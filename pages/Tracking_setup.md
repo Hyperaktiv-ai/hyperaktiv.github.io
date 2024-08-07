@@ -88,6 +88,8 @@ dataLayer.push({
 ````
 (Replace the amount, currency, product and type by the correct values)
 
+Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is processed. In your app, this callback URL should be a payment confirmation page, displayed to the user. In order to push an event to GTM, we will need to insert the previous code in this confirmation page. The page requires the amount, currency, product and subscription type in order to set the properties, so it might happen that you will have to append those parameters to the callback URL you provide to Stripe, so they can then be extracted in the confirmation page. Don't hesitate to contact us on [Slack community] if you struggle with the implementation.
+
 ## Custom event
 On every specific action that you consider worth being tracked, add this piece of Javascript :
 ````
