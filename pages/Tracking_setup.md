@@ -110,7 +110,7 @@ The procedure to install is [here](/pages/GTM_serverside)
 #### 2. Backend to frontend notification
 Especially if you're using a reactive webapp, you can push a notification from the backend to the frontend, for example to display a confirmation message. In this notification, you can add the required parameters to then, from the frontend, push the event in GTM's datalayer.
 
-#### 2. Amplitude API
+#### 3. Amplitude API
 Here is the [full documentation](https://amplitude.com/docs/apis/analytics/http-v2#request)
 
 In a nutshell :
