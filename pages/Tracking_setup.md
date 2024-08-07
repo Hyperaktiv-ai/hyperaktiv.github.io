@@ -103,7 +103,8 @@ If the payment is entirely processed server-side, and there is no confirmation p
 The downside of this approach is that the container is a VM on GCP, which requires a billing account
 The VM would be in the free tier for some time, but depending on the volume of events, you could be charged
 --> we do not recommend to use the server-side tracking when it's possible to use the client-side (free).
-But if we stick to revenue events only, then it's a very small cost (<1€ a month if less than 100 revenue events a month)
+But if we stick to revenue events only, then it's a very small cost (<1€ a month if less than 100 revenue events a month).
+The procedure to install is [here](/pages/GTM_serverside)
 
 #### Server -> client notification
 Especially if you're using a reactive webapp, you can push a notification from the backend to the frontend, for example to display a confirmation message. In this notification, you can add the required parameters to then, from the frontend, push the event in GTM's datalayer.
