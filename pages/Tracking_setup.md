@@ -119,7 +119,6 @@ Here is a shorter version :
 ``POST`` on ``https://api.amplitude.com/2/httpapi`` (US projects) or ``https://api.eu.amplitude.com/2/httpapi`` (EU projects)
 Headers : ``Content-Type: application/json``
 
-Just set the parameters in ``{{..}}`` with the right values
 ````
 {
   "api_key": "{{api_key}}",
@@ -139,6 +138,10 @@ Just set the parameters in ``{{..}}`` with the right values
   ]
 }
 ````
+Just replace the parameters in ``{{..}}`` with the right values.
+* ``productId`` : the name of the product the user purchased, for example : ``basic_plan``, ``enterprise_plan``...
+* ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
+* ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
 
 ## Custom event
 On every specific action that you consider worth being tracked, add this piece of Javascript :
