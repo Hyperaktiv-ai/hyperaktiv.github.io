@@ -75,11 +75,11 @@ dataLayer.push({
  });
 ````
 
-## Purchase
-When your user finalized a subscription / purchase, add this piece of Javascript :
+## Revenue
+When your user finalized a subscription or purchased a one-time product, add this piece of Javascript :
 ````
 dataLayer.push({
- 'event': 'purchase',
+ 'event': 'revenue',
  'amount': 15,
  'currency': 'EUR',
  'product': 'basic_plan',
@@ -90,6 +90,8 @@ dataLayer.push({
 
 Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is processed. 
 We will use this feature to push the event to [Google Tag Manager].
+
+A ``revenue`` event must be pushed everytime a payment is confirmed by the payment gateway.
 
 ### Using a callback URL leading to a confirmation page
 In your app, the callback URL should lead to a payment confirmation page, displayed to the user. In order to push an event to GTM, we will need to insert the previous code in this confirmation page. The page requires the amount, currency, product and subscription type in order to set the properties, so it might happen that you will have to append those parameters to the callback URL you provide to Stripe, so they can then be extracted in the confirmation page. Don't hesitate to contact us on [Slack community] if you struggle with the implementation.
