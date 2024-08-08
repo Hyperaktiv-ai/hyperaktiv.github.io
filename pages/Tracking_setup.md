@@ -76,7 +76,7 @@ dataLayer.push({
 ````
 
 ## Revenue
-When your user finalized a subscription or purchased a one-time product, add this piece of Javascript :
+When your user finalized a subscription or made a any kind of purchase, add this piece of Javascript :
 ````
 dataLayer.push({
  'event': 'revenue',
