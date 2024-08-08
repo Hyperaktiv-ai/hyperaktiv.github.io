@@ -86,7 +86,10 @@ dataLayer.push({
  'type': 'yearly'
  });
 ````
-(Replace the amount, currency, product and type by the correct values)
+Replace the amount, currency, product and type by the correct values :
+* ``product`` : the name of the product the user purchased, for example : ``basic_plan``, ``enterprise_plan``...
+* ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
+* ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
 
 Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is processed. 
 We will use this feature to push the event to [Google Tag Manager].
@@ -137,11 +140,8 @@ Headers : ``Content-Type: application/json``
     }
   ]
 }
-````
+````)
 Just replace the parameters in ``{{..}}`` with the right values.
-* ``productId`` : the name of the product the user purchased, for example : ``basic_plan``, ``enterprise_plan``...
-* ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
-* ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
 
 ## Custom event
 On every specific action that you consider worth being tracked, add this piece of Javascript :
