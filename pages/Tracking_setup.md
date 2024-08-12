@@ -140,7 +140,7 @@ Headers : ``Content-Type: application/json``
     }
   ]
 }
-````)
+````
 Just replace the parameters in ``{{..}}`` with the right values.
 
 ## Custom event
