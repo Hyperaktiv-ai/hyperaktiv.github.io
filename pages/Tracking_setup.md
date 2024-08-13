@@ -163,7 +163,7 @@ You can also add event properties if you want.
     1. "Data" in the top menu > "Destinations" > "Add destination"
     2. Search for "BigQuery"
     3. Check both checkboxes (it might be that the second one is not available yet, it's fine)
-    4. Choose a frequency of 3h, then "Next"
+    4. Choose a frequency of 1h, then "Next"
     5. Dataset : put the name of your company
     6. Service Account key : upload the service account file we provided, then "Next"
     7. Data Destination Name : set "Hyperaktiv"
