@@ -7,8 +7,8 @@ description: "UTM Parameters in action"
 {% include variables.md %}
 
 # Introduction to UTM Parameters
-* **Definition**: UTM parameters are short text codes added to URLs to track the performance of marketing campaigns.
-* **Origin**: UTM stands for Urchin Tracking Module, originating from Urchin, a predecessor to Google Analytics.
+* **Definition**: UTM parameters are short text codes added to URLs to track the performance of marketing campaigns, and keep track of the source of the traffic in general.
+* **Origin**: UTM stands for "Urchin Tracking Module", originating from Urchin, a predecessor to Google Analytics. It is not an officail WEB standard, but it became some sort of standard de facto.
 
 # Why UTM Parameters matter
 * **Accurate Attribution**: Assign precise credit to traffic sources, understanding which platforms drive the most traffic.
@@ -20,27 +20,22 @@ description: "UTM Parameters in action"
 # How to Create UTM Parameters
 Parameters are simply appended in a URL after a ``?``, separated by ``&`` (e.g., ``http://www.example.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=summer_sale``).
 ## UTM Parameters Overview:
-* **Campaign Source (``utm_source``)**: Identifies the traffic source (e.g., facebook, twitter).
-* **Campaign Medium (``utm_medium``)**: Specifies the channel (e.g., paid_social, organic_social).
-* **Campaign Name (``utm_campaign``)**: Names the campaign (e.g., summer_sale, product_launch).
+### Mandatory parameters:
+* **Campaign Source (``utm_source``)**: Identifies the traffic source (e.g., facebook, twitter, google).
+* **Campaign Medium (``utm_medium``)**: Specifies the channel (e.g., social, cpc, email).
+* **Campaign Name (``utm_campaign``)**: Name the campaign (e.g., summer_sale, product_launch).
+### Optional parameters:
+* **utm_id**: It is a good practice to use this field to identify campaigns in Google Ads / Google Analytics.
 * **Campaign Term (``utm_term``)**: Tracks keywords (often used in paid search ads).
 * **Campaign Content (``utm_content``)**: Differentiates between multiple links or creatives (e.g., ad1, ad2).
-## Optional GA4 Tags:
-* **utm_id**: For campaign ID in GA4.
-* **utm_source_platform**: Identifies the source platform.
-
-# Using UTM Parameters in Practice
-* **Real-Life Example**: Show how UTM parameters appear in a URL and how they track performance.
-* **Integration with Analytics Tools**: Demonstrate how UTM parameters work with Google Analytics or other tools to analyze traffic.
 
 # Tips for Using UTM Parameters
+* **Apply the standards**: Use tools like [UTM builder](https://utmbuilder.net/){:target="_blank"} to create URL with UTM parameters quickly.
 * **Avoid Internal Links**: Do not use UTM parameters for internal links to prevent tracking errors.
 * **Document Naming Conventions**: Create a consistent system for naming UTM parameters to avoid discrepancies.
 * **Maintain Consistency**: Use lowercase, avoid spaces, and choose consistent separators in UTM parameters.
 * **Check for Errors**: Regularly review UTM codes for mistakes or typos.
 * **Track Links in a Spreadsheet**: Manage and document UTM links to avoid duplication and ensure easy reference.
-* **Create Campaign Presets**: Use tools like [Hootsuite](https://www.hootsuite.com/){:target="_blank"} to save and apply UTM parameters quickly and consistently.
-* **Track Influencer ROI**: Use unique UTM parameters to measure influencer performance and ROI.
+* **Track ROI**: Use unique UTM parameters to measure performance and ROI.
 * **Experiment with A/B Testing**: Test different content or strategies using UTM parameters to find what works best.
-
-
+* **Create Campaign Presets**: Use tools like [Hootsuite](https://www.hootsuite.com/){:target="_blank"} to save and apply UTM parameters quickly and consistently.
