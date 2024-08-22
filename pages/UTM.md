@@ -25,7 +25,7 @@ Parameters are simply appended in a URL after a ``?``, separated by ``&`` (e.g.,
 * **Campaign Medium (``utm_medium``)**: Specifies the channel (e.g., social, cpc, email).
 * **Campaign Name (``utm_campaign``)**: Name the campaign (e.g., summer_sale, product_launch).
 ### Optional parameters:
-* **utm_id**: It is a good practice to use this field to identify campaigns in Google Ads / Google Analytics.
+* **Campaign Identifier (``utm_id``)**: It is a good practice to use this field to identify campaigns in Google Ads / Google Analytics or other softwares.
 * **Campaign Term (``utm_term``)**: Tracks keywords (often used in paid search ads).
 * **Campaign Content (``utm_content``)**: Differentiates between multiple links or creatives (e.g., ad1, ad2).
 
