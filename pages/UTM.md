@@ -18,17 +18,16 @@ description: "UTM Parameters in action"
 * **Data-Driven Decisions**: Use insights to refine social media strategies and allocate budgets more efficiently.
 
 # How to Create UTM Parameters
+Parameters are simply appended in a URL after a ?, separated by & (e.g., ``http://www.example.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=summer_sale``).
 ## UTM Parameters Overview:
 * **Campaign Source (``utm_source``)**: Identifies the traffic source (e.g., facebook, twitter).
 * **Campaign Medium (``utm_medium``)**: Specifies the channel (e.g., paid_social, organic_social).
 * **Campaign Name (``utm_campaign``)**: Names the campaign (e.g., summer_sale, product_launch).
 * **Campaign Term (``utm_term``)**: Tracks keywords (often used in paid search ads).
-* **Campaign Content (utm_content)**: Differentiates between multiple links or creatives (e.g., ad1, ad2).
+* **Campaign Content (``utm_content``)**: Differentiates between multiple links or creatives (e.g., ad1, ad2).
 ## Optional GA4 Tags:
 * **utm_id**: For campaign ID in GA4.
 * **utm_source_platform**: Identifies the source platform.
-## Combining Parameters
-* **Building URLs**: Combine parameters in a URL after a ?, separated by & (e.g., http://www.example.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=summer_sale).
 
 # Using UTM Parameters in Practice
 * **Real-Life Example**: Show how UTM parameters appear in a URL and how they track performance.
