@@ -8,9 +8,9 @@ description: "API"
 
 # Access to API
 
-Our API is accessible here : [api.hyperaktiv.ai](http://api.hyperaktiv.ai/)
+Our API is accessible here : [api.hyperaktiv.ai](http://api.hyperaktiv.ai/){:target="_blank"}
 
-[Swagger](https://app.swaggerhub.com/apis/Hyperaktiv-ai/api)
+[Swagger](https://app.swaggerhub.com/apis/Hyperaktiv-ai/api){:target="_blank"}
 
 # API authentication
 
