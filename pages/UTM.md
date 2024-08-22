@@ -29,8 +29,9 @@ Parameters are simply appended in a URL after a ``?``, separated by ``&`` (e.g.,
 * **Campaign Term (``utm_term``)**: Tracks keywords (often used in paid search ads).
 * **Campaign Content (``utm_content``)**: Differentiates between multiple links or creatives (e.g., ad1, ad2).
 
-# Tips for Using UTM Parameters
+# Advices for using UTM Parameters
 * **Apply the standards**: Use tools like [UTM builder](https://utmbuilder.net/){:target="_blank"} to create URL with UTM parameters quickly.
+* **Commitment**: Use UTM parameters everywhere there is a link to your website: blogs, social medias, emails, ads...
 * **Avoid Internal Links**: Do not use UTM parameters for internal links to prevent tracking errors.
 * **Document Naming Conventions**: Create a consistent system for naming UTM parameters to avoid discrepancies.
 * **Maintain Consistency**: Use lowercase, avoid spaces, and choose consistent separators in UTM parameters.
