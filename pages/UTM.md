@@ -18,7 +18,7 @@ description: "UTM Parameters in action"
 * **Data-Driven Decisions**: Use insights to refine social media strategies and allocate budgets more efficiently.
 
 # How to Create UTM Parameters
-Parameters are simply appended in a URL after a ?, separated by & (e.g., ``http://www.example.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=summer_sale``).
+Parameters are simply appended in a URL after a ``?``, separated by ``&`` (e.g., ``http://www.example.com/?utm_source=facebook&utm_medium=paid_social&utm_campaign=summer_sale``).
 ## UTM Parameters Overview:
 * **Campaign Source (``utm_source``)**: Identifies the traffic source (e.g., facebook, twitter).
 * **Campaign Medium (``utm_medium``)**: Specifies the channel (e.g., paid_social, organic_social).
