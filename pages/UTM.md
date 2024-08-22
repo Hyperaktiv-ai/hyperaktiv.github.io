@@ -39,7 +39,7 @@ Parameters are simply appended in a URL after a ?, separated by & (e.g., ``http:
 * **Maintain Consistency**: Use lowercase, avoid spaces, and choose consistent separators in UTM parameters.
 * **Check for Errors**: Regularly review UTM codes for mistakes or typos.
 * **Track Links in a Spreadsheet**: Manage and document UTM links to avoid duplication and ensure easy reference.
-* **Create Campaign Presets**: Use tools like Hootsuite to save and apply UTM parameters quickly and consistently.
+* **Create Campaign Presets**: Use tools like [Hootsuite](https://www.hootsuite.com/){:target="_blank"} to save and apply UTM parameters quickly and consistently.
 * **Track Influencer ROI**: Use unique UTM parameters to measure influencer performance and ROI.
 * **Experiment with A/B Testing**: Test different content or strategies using UTM parameters to find what works best.
 
