@@ -2,7 +2,7 @@
 layout: default
 title: UTM
 nav_order: 5
-description: "UTM Parameters in acftion"
+description: "UTM Parameters in action"
 ---
 {% include variables.md %}
 
@@ -10,7 +10,7 @@ description: "UTM Parameters in acftion"
 * **Definition**: UTM parameters are short text codes added to URLs to track the performance of marketing campaigns.
 * **Origin**: UTM stands for Urchin Tracking Module, originating from Urchin, a predecessor to Google Analytics.
 
-# Why UTM Parameters Matter
+# Why UTM Parameters matter
 * **Accurate Attribution**: Assign precise credit to traffic sources, understanding which platforms drive the most traffic.
 * **Measuring Campaign Performance**: Analyze metrics like conversions, bounce rates, and time on-site for various campaigns.
 * **Calculating ROI**: Determine the return on investment by tracking traffic and conversions from each channel.
