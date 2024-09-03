@@ -75,8 +75,18 @@ dataLayer.push({
  });
 ````
 
-## Revenue
-When your user finalized a subscription or made a any kind of purchase, add this piece of Javascript :
+## Revenue {.tabset}
+
+A ``revenue`` event must be pushed everytime a payment is confirmed by the payment gateway.
+Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is processed.
+Depending on how your app is structured, there are 2 possibilities :
+1. the user is redirected to a confirmation page where the payment information is available
+2. the payment information is not available in a page
+
+### Confirmation page
+In your app, the callback URL should lead to a payment confirmation page, displayed to the user. We can push a revenue event to GTM in this confirmation page. The page requires the amount, currency, product and subscription type in order to set the properties, so it might happen that you will have to append those parameters to the callback URL you provide to Stripe, so they can then be extracted in the confirmation page. Don't hesitate to contact us on [Slack community] if you struggle with the implementation.
+
+Insert this piece of Javascript will send an event to Google Tag Manager :
 ````
 dataLayer.push({
  'event': 'revenue',
@@ -91,31 +101,14 @@ Replace the amount, currency, product and type by the correct values :
 * ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
 * ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
 
-Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is processed. 
-We will use this feature to push the event to [Google Tag Manager].
-
-A ``revenue`` event must be pushed everytime a payment is confirmed by the payment gateway.
-
-### Using a callback URL leading to a confirmation page
-In your app, the callback URL should lead to a payment confirmation page, displayed to the user. In order to push an event to GTM, we will need to insert the previous code in this confirmation page. The page requires the amount, currency, product and subscription type in order to set the properties, so it might happen that you will have to append those parameters to the callback URL you provide to Stripe, so they can then be extracted in the confirmation page. Don't hesitate to contact us on [Slack community] if you struggle with the implementation.
-
 ### The payment callback is entirely server-side
-If the payment is entirely processed server-side, and there is no confirmation page displayed to your user, then it's not possible to push the event in the datalayer. In that situation, there are three options :
-1. Using a server-side GTM container
-2. Pushing back a notification to the frontend from the backend
-3. Pushing the event directly to Hyperaktiv via [Amplitude] API
+If there is no confirmation page, or the payment is entirely processed server-side, then it's not possible to push the event to GTM's datalayer. In that situation, there are three options to push the revenue event :
+1. Directly to Hyperaktiv via [Amplitude] API
+2. By sending a notification to the frontend from the backend
+3. Using a server-side GTM container
+4. Using Segment or any other ETL
 
-#### 1. Server-side GTM container
-The downside of this approach is that the container is a VM on GCP, which requires a billing account
-The VM would be in the free tier for some time, but depending on the volume of events, you could be charged
---> we do not recommend to use the server-side tracking when it's possible to use the client-side (free).
-But if we stick to revenue events only, then it's a very small cost (<1€ a month if less than 100 revenue events a month).
-The procedure to install is [here](/pages/GTM_serverside)
-
-#### 2. Backend to frontend notification
-Especially if you're using a reactive webapp, you can push a notification from the backend to the frontend, for example to display a confirmation message. In this notification, you can add the required parameters to then, from the frontend, push the event in GTM's datalayer.
-
-#### 3. Amplitude API
+#### 1. Amplitude API
 Here is the [full documentation](https://amplitude.com/docs/apis/analytics/http-v2#request)
 
 Here is a shorter version :
@@ -142,6 +135,19 @@ Headers : ``Content-Type: application/json``
 }
 ````
 Just replace the parameters in ``{{..}}`` with the right values.
+
+#### 2. Backend to frontend notification
+Especially if you're using a reactive webapp, you can push a notification from the backend to the frontend, for example to display a confirmation message. In this notification, you can add the required parameters to then, from the frontend, push the event in GTM's datalayer.
+
+#### 3. Server-side GTM container
+The downside of this approach is that the container is a VM on GCP, which requires a billing account
+The VM would be in the free tier for some time, but depending on the volume of events, you could be charged
+--> we do not recommend to use the server-side tracking when it's possible to use the client-side (free).
+But if we stick to revenue events only, then it's a very small cost (<1€ a month if less than 100 revenue events a month).
+The procedure to install is [here](/pages/GTM_serverside)
+
+#### 4. Using Segment / another ETL
+Just push the event to Segment / your ETL, and from there, push the event to Amplitude
 
 ## Custom event
 On every specific action that you consider worth being tracked, add this piece of Javascript :
