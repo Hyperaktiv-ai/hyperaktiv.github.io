@@ -75,7 +75,7 @@ dataLayer.push({
  });
 ````
 
-## Revenue {.tabset}
+## Revenue
 
 A ``revenue`` event must be pushed everytime a payment is confirmed by the payment gateway.
 Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is processed.
