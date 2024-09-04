@@ -13,7 +13,7 @@ has_children: true
 The tracking infrastructure involves several tools, that have a specific role: 
 * [Google Tag Manager] : script injection, centralization of events and publication to 1 or several tracking softwares
 * [Amplitude] : 1 of those tracking softwares, collecting the events and taking care of user identification across devices and locations
-* [Hyperaktiv] : segmentation of users and hyper-personalization automation in order to increase your conversions
+* [Hyperaktiv] : segmentation of users, hyper-personalization and automation in order to increase your signups and conversions
 
 There are four steps, it takes only a few minutes :
 1. [Hyperkativ with Amplitude](/pages/Hyperaktiv_Amplitude)

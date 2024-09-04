@@ -56,10 +56,10 @@ If you're a data analyst, and you love to spend time building charts
 * [Mixpanel] : not bad, but limited in the free version ; quite complex to build simple things
 * [Segment] : although not the #1 choice
 
-### I want to improve the efficiency of my funnel
+### I want to improve the efficiency of my funnel and increase signups and conversions
 
 If you're working in growth / marketing / sales, and you don't want to waste your time :
-* Hyperaktiv : we built this tool for you
+* [Hyperaktiv] : we built this tool for you
 
 # Next step >>
 

@@ -17,6 +17,7 @@ Here are some of the main questions people have when it comes to user tracking :
 * how much time would it take ?
 
 Good news : Hyperaktiv has a simple answer to all those questions.
+
 Spoiler alert : you don't need to know how to code ; and the whole thing should not take more than a few minutes.
 
 Here you will find explanations.
