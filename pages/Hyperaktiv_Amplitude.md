@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 1. Hyperkativ with Amplitude
+title: 1. Hyperaktiv with Amplitude
 parent: Tracking setup
 nav_order: 1
 description: "How to connect Hyperaktiv in Amplitude"
