@@ -48,5 +48,5 @@ Why we recommend to use [Google Tag Manager] :
 
 You can find more information about tracking software [here](/pages/Tracking_softwares)
 
-How to setup requires only a few minutes ; [let's start](/pages/Tracking_setup).
+Setting up with [Google Tag Manager] requires only a few minutes ; [let's start](/pages/Tracking_setup).
 

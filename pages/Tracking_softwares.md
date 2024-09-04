@@ -2,7 +2,7 @@
 layout: default
 title: Tracking softwares
 nav_order: 3
-description: "Which tracking software ?"
+description: "Which tracking software should I use ?"
 ---
 {% include variables.md %}
 
@@ -61,3 +61,6 @@ If you're a data analyst, and you love to spend time building charts
 If you're working in growth / marketing / sales, and you don't want to waste your time :
 * Hyperaktiv : we built this tool for you
 
+# Next step >>
+
+Setting up with [Google Tag Manager] requires only a few minutes ; [let's start](/pages/Tracking_setup).

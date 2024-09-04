@@ -10,3 +10,4 @@
 [Mixpanel]: https://mixpanel.com/
 [Posthog]: https://posthog.com/
 [Segment]: https://segment.com/
+[Slack community]: https://join.slack.com/t/hyperaktivcommunity/shared_invite/zt-2gxxifo1f-N1lKn5~V32Hgvpx4~oi4IA

@@ -1,14 +1,14 @@
 ---
 layout: default
-title: Amplitude to Hyperaktiv 
+title: Hyperkativ with Amplitude
 parent: Tracking setup
-nav_order: 4
+nav_order: 1
 description: "How to connect Hyperaktiv in Amplitude"
 ---
 {% include variables.md %}
 {% raw %}
 
-# Integration with Hyperaktiv
+# Integrating Hyperaktiv and Amplitude
 
 1. Request an authentication key from us on [Slack community]
 2. Create a project in [Amplitude] : 
@@ -24,6 +24,9 @@ description: "How to connect Hyperaktiv in Amplitude"
     6. Service Account key : upload the service account file we provided, then "Next"
     7. Data Destination Name : set "Hyperaktiv"
 
+# Next step >>
+
+[Installation of Google Tag Manager](/pages/GTM/Install)
+
 {% endraw %}
 
-[Slack community]: https://join.slack.com/t/hyperaktivcommunity/shared_invite/zt-2gxxifo1f-N1lKn5~V32Hgvpx4~oi4IA
