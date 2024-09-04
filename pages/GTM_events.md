@@ -153,6 +153,10 @@ dataLayer.push({
 ````
 You can also add event properties if you want.
 
+# Next
+
+[Sending events to Amplitude](/pages/GTM_Amplitude)
+
 {% endraw %}
 
 [Slack community]: https://join.slack.com/t/hyperaktivcommunity/shared_invite/zt-2gxxifo1f-N1lKn5~V32Hgvpx4~oi4IA

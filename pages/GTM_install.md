@@ -54,3 +54,6 @@ Bubble offers the possibility to customize the ``header`` and the ``body`` only 
 
 Here is the [documentation](https://webflow.com/blog/integrating-google-tag-manager-with-google-analytics-in-webflow)
 
+# Next
+
+[Tracking events in Google Tag Manager](/pages/GTM_events)

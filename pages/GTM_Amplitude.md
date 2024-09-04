@@ -97,6 +97,10 @@ Create 1 variable for each event property set in the events (select the type ``D
 Everything is now ready.
 Just use the "Preview" mode in GTM to check that all events are properly captured by GTM.
 
+# Next
+
+[Integration with Hyperaktiv](/pages/Amplitude_Hyperaktiv)
+
 {% endraw %}
 
 [Slack community]: https://join.slack.com/t/hyperaktivcommunity/shared_invite/zt-2gxxifo1f-N1lKn5~V32Hgvpx4~oi4IA
