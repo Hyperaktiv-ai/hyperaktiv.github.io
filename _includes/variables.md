@@ -6,6 +6,7 @@
 [Google Analytics]: https://analytics.google.com/
 [Google Tag Manager]: https://tagmanager.google.com/
 [Hotjar]: https://hotjar.com/
+[Hyperaktiv]: https://www.hyperaktiv.ai/
 [Microsoft Clarity]: https://clarity.microsoft.com/
 [Mixpanel]: https://mixpanel.com/
 [Posthog]: https://posthog.com/
