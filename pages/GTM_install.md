@@ -1,13 +1,29 @@
 ---
 layout: default
-title: GTM with a CMS
+title: Google Tag Manager
 parent: Tracking setup
 nav_order: 1
-description: "How to use Google Tag Manager with a CMS"
+description: "How to install Google Tag Manager"
 ---
 {% include variables.md %}
 
-# Introduction
+# Installation of Google Tag Manager
+
+Read this : [Setup and install GTM](https://support.google.com/tagmanager/answer/6103696){:target="_blank"}{:rel="noopener noreferrer"}.
+
+It is recommended to create only one web container for both the website and the webapp.
+In case of mobile apps, there should be 1 container for iOS, another one for Android.
+We might also need a "server" container later, but let's see.
+
+Follow the installation guide for both the website and the webapp.
+You can test that the container is deployed properly using the "Preview" in GTM, both on the website and the webapp. The tag assistant should confirm that the container is deployed by displaying the message "Tag Assistant Connected" 
+You might need to disable any adblocker in the webbrowser, cause they might block GTM script from being executed.
+
+In case there is already some hard-coded tags implemented, we recommend to migrate the existing tags to [Google Tag Manager], and then remove the old hard-coded tracking tags.
+
+In case of a website built with a CMS, the installation might be a bit different ; read below.
+
+# Installation with a CMS
 
 If you're using a CMS (Content Management System), the installation of [Google Tag Manager] is specific.
 

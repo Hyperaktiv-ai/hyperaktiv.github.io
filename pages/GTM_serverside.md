@@ -1,8 +1,8 @@
 ---
 layout: default
 title: Server-side GTM
-parent: Tracking setup
-nav_order: 2
+parent: GTM
+nav_order: 1
 description: "How to push events to GTM server"
 ---
 {% include variables.md %}
