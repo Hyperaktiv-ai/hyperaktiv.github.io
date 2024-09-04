@@ -2,6 +2,7 @@
 layout: default
 title: User conversion
 parent: 4. Pushing events to GTM
+grand_parent: Tracking setup
 nav_order: 3
 description: "How to track revenue / user conversions"
 ---

@@ -2,6 +2,7 @@
 layout: default
 title: User activation
 parent: 4. Pushing events to GTM
+grand_parent: Tracking setup
 nav_order: 2
 description: "How to track user activation"
 ---

@@ -2,6 +2,7 @@
 layout: default
 title: User trial
 parent: 4. Pushing events to GTM
+grand_parent: Tracking setup
 nav_order: 4
 description: "How to track user trials"
 ---
