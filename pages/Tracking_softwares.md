@@ -6,7 +6,7 @@ description: "Which tracking software should I use ?"
 ---
 {% include variables.md %}
 
-# Introduction
+# Tracking softwares
 
 It is very rare to use only 1 tracking software, unfortunately. The reason why you will probably need several softwares is because you don't have only 1 objective, right ?
 

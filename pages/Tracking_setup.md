@@ -8,6 +8,7 @@ has_children: true
 {% include variables.md %}
 {% raw %}
 
+# Tracking setup
 
 The tracking infrastructure involves several tools, that have a specific role: 
 * [Google Tag Manager] : script injection, centralization of events and publication to 1 or several tracking softwares

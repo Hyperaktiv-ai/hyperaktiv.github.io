@@ -8,7 +8,7 @@ description: "Sending events from Google Tag Manager to Amplitude"
 {% include variables.md %}
 {% raw %}
 
-# Introduction
+# Amplitude with GTM
 
 [Amplitude]'s script has to be "loaded" by [Google Tag Manager] each time a user navigates in your website / webapp.
 

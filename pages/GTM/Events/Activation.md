@@ -8,7 +8,7 @@ description: "How to track user activation"
 {% include variables.md %}
 {% raw %}
 
-# Introduction
+# User activation
 
 The activation of your users is a very important goal that we want to monitor closely. There should be at least 1 feature in your product that is considered an "activation feature", and there can be several.
 

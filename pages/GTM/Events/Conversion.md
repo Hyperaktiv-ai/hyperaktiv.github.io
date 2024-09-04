@@ -8,7 +8,7 @@ description: "How to track revenue / user conversions"
 {% include variables.md %}
 {% raw %}
 
-# Introduction
+# User conversion
 
 Revenue tracking might be the most complex configuration to implement, but it is also the most important one.
 A ``revenue`` event must be pushed everytime a payment is confirmed by the payment gateway.
@@ -164,6 +164,6 @@ Just push the event to Segment / your ETL using the SDK that fits your tech stac
 
 # Next step >>
 
-[Trial tracking](/pages/GTM/Events/Trial)
+[User trial](/pages/GTM/Events/Trial)
 
 {% endraw %}

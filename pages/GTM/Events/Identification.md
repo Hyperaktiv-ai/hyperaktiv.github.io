@@ -8,7 +8,7 @@ description: "How to track user identification"
 {% include variables.md %}
 {% raw %}
 
-# Introduction
+# User identification
 
 As soon as your user is identified, their email should be pushed to Hyperaktiv and all tracking softwares.
 This usually happens on signup and login.

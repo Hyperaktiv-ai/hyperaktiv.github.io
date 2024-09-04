@@ -6,7 +6,7 @@ description: "How to track your leads's behavior"
 ---
 {% include variables.md %}
 
-# Introduction
+# Tracking principles
 
 A strong tracking infrastructure implemented on your website and app will allow you to better understand your leads' behavior.
 Here are some of the main questions people have when it comes to lead tracking :

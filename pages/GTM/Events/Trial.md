@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Trial tracking
+title: User trial
 parent: Pushing events to GTM
 nav_order: 4
 description: "How to track user trials"
@@ -8,7 +8,7 @@ description: "How to track user trials"
 {% include variables.md %}
 {% raw %}
 
-# Introduction
+# User trial
 
 Most B2B SaaS business offer a trial to their users. In that case, Hyperaktiv offers the possibility to monitor key metrics related to trials (signup to trial average time, trial rate, trial to conversion rate, etc)
 

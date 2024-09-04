@@ -8,7 +8,9 @@ description: "How to track custom events"
 {% include variables.md %}
 {% raw %}
 
-# Push event to Google Tag Manager
+# Custom events
+
+## Push event to Google Tag Manager
 On every specific action that you consider worth being tracked, add this piece of Javascript :
 ````
 dataLayer.push({
@@ -17,16 +19,16 @@ dataLayer.push({
 ````
 You can also add event properties if you want.
 
-# Send event from GTM to Amplitude
+## Send event from GTM to Amplitude
 
-## Triggers
+### Triggers
 Create 1 trigger per event with type ``Custom event`` :
 - "Event - my custom event" :
 	* Event name : ``my custom event``
 
 Create as many triggers as you have activation events.
 
-## Tags
+### Tags
 Create 1 tag with type ``Amplitude Analytics Browser SDK`` :
 - "Amplitude - Custom events" :
 	* Tag type : ``Track Event (track)``
