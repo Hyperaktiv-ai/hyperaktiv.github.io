@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Tracking setup
-nav_order: 3
+nav_order: 4
 description: "How to implement your tracking infrastructure"
 has_children: true
 ---
