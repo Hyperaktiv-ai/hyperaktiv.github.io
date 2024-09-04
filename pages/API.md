@@ -1,26 +1,24 @@
 ---
 layout: default
-title: API
+title: Hyperaktiv API
 nav_order: 6
 description: "API"
 ---
 {% include variables.md %}
 
-# Access to API
+# Hyperaktiv API
 
-Our API is accessible here : [api.hyperaktiv.ai](http://api.hyperaktiv.ai/){:target="_blank"}
+Base url for the API is ``https://app.swaggerhub.com/apis-docs/Hyperaktiv/api``.
 
-[Swagger](https://app.swaggerhub.com/apis/Hyperaktiv-ai/api){:target="_blank"}
+Our API documentation is accessible here (Postman) : [api.hyperaktiv.ai](http://api.hyperaktiv.ai/){:target="_blank"}
+
+Swagger is available here : [Swagger](https://app.swaggerhub.com/apis/Hyperaktiv-ai/api){:target="_blank"}
 
 # API authentication
 
 Authentication is implemented through a Bearer token, which is unique and linked to your workspace only.
 
-## Where can I find my API key ?
-
 Your API key can be found in the back-office : "Settings" menu > "API".
-
-## How to use my API key ?
 
 Each call to our API require the following header (where ``[YOUR_API_KEY]`` has to be replaced by your API key) :
 
@@ -28,7 +26,7 @@ Each call to our API require the following header (where ``[YOUR_API_KEY]`` has 
 "Authorization": "Bearer [YOUR_API_KEY]"
 ````
 
-# Create a lead
+# Import users (deprecated)
 
 1. In the back-office, add an API endpoint as an origin in your funnel ; a reference code is generated.
 2. Call [POST /leads]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"} endpoint.
@@ -57,9 +55,9 @@ fetch('https://app.hyperaktiv.ai/api/v1/leads?ref=YYY', {
    .then(response => console.log(JSON.stringify(response)))
 ```
 
-# Can I send more information about my lead 
+## Can I send more information about my user 
 
-Yes, it's possible to send more information about your lead. Details can be found [here]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"}.
+Yes, it's possible to send more information about your user. Details can be found [here]({{ apiUrl }}#/leads/post_leads){:target="_blank"}{:rel="noopener noreferrer"}.
 
 Body :
 ```json

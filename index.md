@@ -1,50 +1,38 @@
 ---
-title: Home
+title: Hyperaktiv documentation
 layout: home
 nav_order: 1
 permalink: /
 ---
+{% include variables.md %}
 
 # Introduction
 
-Hyperaktiv helps you increase conversion by segmenting your leads based on :
+Hyperaktiv helps you increase conversion by segmenting your users based on :
 * their engagement on your website / app
 * how much they match your ICP (Ideal Customer Profile)
+* their lifecycle stage
 
-Hyperaktiv offers a back-office where you can automate actions, but also monitor your funnel, and get a better understanding of who are your leads.
-In order to analyse the performance of your funnel, we'll capture everything your website's visitors and app users do, thanks to a simple tracking infrastructure.
+Hyperaktiv offers a back-office where you can monitor your funnel, automate actions, and get recommendations on how to improve the efficiency of your funnel.
+Hyperaktiv is a data-driven platform, so we'll capture your website's visitors and app users behavior, thanks to a powerful (but simple) tracking infrastructure.
 
 # Tracking infrastructure
 
-We can implement the tracking infrastructure for you (just ping us on [Slack]), or you can implement it by yourself using this [step-by-step documentation](/pages/Tracking_principles)
+We can implement the tracking infrastructure for you (just ping us on  [Slack community]), or you can implement it by yourself in a few minutes using this [step-by-step documentation](/pages/Tracking_principles).
 
 # API
 
-Base url for the API is ``https://app.swaggerhub.com/apis-docs/Hyperaktiv/api``.
-You can find instructions on how to authenticate to our API [here](/pages/API).
-Our Postman collection can be used to facilitate tests on our API : [Hyperaktiv API on Postman](https://hyperaktiv.postman.co/workspace/Hyperaktiv~79462e29-fc9a-4b2c-8d41-bc662701b9da/collection/19855856-94cfa45e-58ff-4eeb-b1a3-7137759a6e4c?action=share&creator=19855856){:target="_blank"}{:rel="noopener noreferrer"}.
-You can also browse and call our API with [SwaggerHub](https://app.swaggerhub.com/apis-docs/Hyperaktiv/api){:target="_blank"}{:rel="noopener noreferrer"}
+Hyperaktiv offers an API ; you can find the documentation [here](/pages/API).
 
 # Terminology
 
-## Goals
-
-Hyperaktiv lets you choose what is the current focus of your business strategy :
-* Acquisition : increasing the amount of (good quality) leads in your funnel
-* Retention : increasing the engagement of signups
-* Conversion : increasing the amount of paying customers
-
-## Lead
-
-A lead is a person who has been visiting your website
-
 ## User
 
-A lead who created an account on your product
+A user is a person who has been visiting your website, or used your product
 
 ## Stage
 
-Defines the life cycle of a Lead :
+Defines the life cycle of a user :
 * Visitor : when they have anonymously visited the website
 * Signup : when they created an account
 * Trial : when they started a trial
@@ -52,8 +40,8 @@ Defines the life cycle of a Lead :
 
 ## Segment
 
-We classify leads in 4 different segments, depending on their :
-* engagement score : how much a lead is interested / invested in your website / app (relatively amongst the leads of the same stage)
+We classify users in 4 different segments, depending on their :
+* Engagement score : how much a user is interested / invested in your website / app (relatively amongst the users of the same stage)
 * ICP match : how much they match your Ideal Customer Profile
 
 There are 4 segments :
@@ -62,11 +50,15 @@ There are 4 segments :
 * Explorers : low engagement score, high ICP match
 * Strangers : low engagement score, low ICP match
 
-Hyperaktiv gives you recommendations to increase engagement of current leads, and increase the acquisition of Champions
+Hyperaktiv gives you recommendations to increase engagement of current users, and increase the acquisition of Champions
+
+## Activation
+
+An "Activated" user is a user who performed one of the activation feature that you defined in Hyperaktiv.
 
 ## Workflow
 
-A workflow is a set of automated actions which are executed automatically when a Lead reaches a new stage.
+A workflow is a set of automated actions which are executed automatically. Workflow can be triggered when a user changes lifecycle stage, segment, or when they become "Activated"
 
 ## DataPoint
 
@@ -74,6 +66,5 @@ Any piece of information related to a lead.
 
 ## Enrichment
 
-Hyperaktiv can fetch information about your Leads (based on their email), in order to compute their ICP match, and give you better insights
+Hyperaktiv can fetch information about your users based on their email, in order to compute their ICP match, and give you better insights. Hyperaktiv uses multiple enrichment providers in order to offer high hit-rate and data reliability. Please contact us for more details.
 
-[Slack community]: https://join.slack.com/t/hyperaktivcommunity/shared_invite/zt-2gxxifo1f-N1lKn5~V32Hgvpx4~oi4IA
