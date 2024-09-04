@@ -114,8 +114,9 @@ If the payment confirmation is not available in the frontend, then GTM's datalay
 Here is the [full documentation](https://amplitude.com/docs/apis/analytics/http-v2#request)
 
 Here is a shorter version :
-``POST`` on ``https://api.amplitude.com/2/httpapi`` (US projects) or ``https://api.eu.amplitude.com/2/httpapi`` (EU projects)
-Headers : ``Content-Type: application/json``
+* Method : ``POST``
+* Server : ``https://api.amplitude.com/2/httpapi`` (US projects) or ``https://api.eu.amplitude.com/2/httpapi`` (EU projects)
+* Headers : ``Content-Type: application/json``
 
 ````
 {
