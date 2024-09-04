@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Pushing events to GTM
+title: 4. Pushing events to GTM
 parent: Tracking setup
 nav_order: 4
 description: "How to push events to Google Tag Manager"

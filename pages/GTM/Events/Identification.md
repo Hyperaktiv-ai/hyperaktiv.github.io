@@ -1,7 +1,7 @@
 ---
 layout: default
 title: User identification
-parent: Pushing events to GTM
+parent: 4. Pushing events to GTM
 nav_order: 1
 description: "How to track user identification"
 ---

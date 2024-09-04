@@ -1,7 +1,7 @@
 ---
 layout: default
 title: User trial
-parent: Pushing events to GTM
+parent: 4. Pushing events to GTM
 nav_order: 4
 description: "How to track user trials"
 ---

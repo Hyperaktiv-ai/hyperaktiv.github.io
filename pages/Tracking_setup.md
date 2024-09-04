@@ -17,7 +17,7 @@ The tracking infrastructure involves several tools, that have a specific role:
 
 There are four steps, it takes only a few minutes :
 1. [Hyperkativ with Amplitude](/pages/Hyperaktiv_Amplitude)
-2. [Installation of Google Tag Manager](/pages/GTM/Install)
+2. [Installation of GTM](/pages/GTM/Install)
 3. [Amplitude with GTM](/pages/GTM/Amplitude)
 4. [Pushing events to GTM](/pages/GTM/Events)
 

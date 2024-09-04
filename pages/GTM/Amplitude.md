@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Amplitude with GTM
+title: 3. Amplitude with GTM
 parent: Tracking setup
 nav_order: 3
 description: "Sending events from Google Tag Manager to Amplitude"
@@ -31,6 +31,6 @@ In that case, try to use the ``History Change`` trigger instead of ``Initialisat
 
 # Next step >>
 
-[Pushing events to GTM](/pages/GTM/Events)
+[4. Pushing events to GTM](/pages/GTM/Events)
 
 {% endraw %}

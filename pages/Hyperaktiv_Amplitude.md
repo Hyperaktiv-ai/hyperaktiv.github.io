@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hyperkativ with Amplitude
+title: 1. Hyperkativ with Amplitude
 parent: Tracking setup
 nav_order: 1
 description: "How to connect Hyperaktiv in Amplitude"
@@ -26,7 +26,7 @@ description: "How to connect Hyperaktiv in Amplitude"
 
 # Next step >>
 
-[Installation of Google Tag Manager](/pages/GTM/Install)
+[2. Installation of GTM](/pages/GTM/Install)
 
 {% endraw %}
 

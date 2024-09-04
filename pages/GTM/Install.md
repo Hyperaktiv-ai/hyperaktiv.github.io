@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Installation of Google Tag Manager
+title: 2. Installation of GTM
 parent: Tracking setup
 nav_order: 2
 description: "How to install Google Tag Manager on your website/webapp"
@@ -57,6 +57,6 @@ Here is the [documentation](https://webflow.com/blog/integrating-google-tag-mana
 
 # Next step >>
 
-[Amplitude with GTM](/pages/GTM/Amplitude)
+[3. Amplitude with GTM](/pages/GTM/Amplitude)
 
 {% endraw %}

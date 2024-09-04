@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Custom events
-parent: Pushing events to GTM
+parent: 4. Pushing events to GTM
 nav_order: 5
 description: "How to track custom events"
 ---
