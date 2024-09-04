@@ -101,7 +101,7 @@ dataLayer.push({
 Replace the amount, currency, product and type by the correct values :
 * ``product`` : the name of the product the user purchased, for example : ``basic_plan``, ``enterprise_plan``...
 * ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
-* ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
+* ``currency`` : we recommend to use a standard 3 letter-long code ; for example ``EUR``
 
 ### Server-side implementation
 If the payment confirmation is not available in the frontend, then GTM's datalayer is not available. In that situation, there are several options to push the revenue event :
@@ -152,7 +152,7 @@ dataLayer.push({
 Replace the amount, currency, product and type by the correct values :
 * ``product`` : the name of the product the user purchased, for example : ``basic_plan``, ``enterprise_plan``...
 * ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
-* ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
+* ``currency`` : we recommend to use a standard 3 letter-long code ; for example ``EUR``
 
 #### 3. Server GTM container
 This approach consists on creating a new "Server" container in Google Tag Manager, and from there pushing the event to Amplitude. The main downside of this approach is that the container is a VM on GCP, which requires a billing account. The VM would be in the free tier for some time, but depending on the volume of events, you could be charged.
