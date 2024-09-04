@@ -10,11 +10,11 @@ description: "Which tracking software should I use ?"
 
 It is very rare to use only 1 tracking software, unfortunately. The reason why you will probably need several softwares is because you don't have only 1 objective, right ?
 
-Tracking tools are limited to the information that is collected by the tracking code on the web browser (language, location, device...), or the datapoints that you explicitely send from your website/app. Most of the time, it is not enough for you to assess whether or not a lead matches your ICP.
+Tracking tools are limited to the information that is collected by the tracking code on the web browser (language, location, device...), or the datapoints that you explicitely send from your website/app. Most of the time, it is not enough for you to assess whether or not a user matches your ICP.
 Hyperaktiv will solve this issue by enriching the data with information found on several online datasources (LinkedIn, YouTube, Twitch, OSINT..).
 
 Here is the biggest weakness : it's "easy" to get the data to flow into analytics softwares, but it's really hard to know what to do in order to increase signups and conversions.
-Hyperaktiv is 100% focused on giving you the right recommendations. Hyperaktiv collects the data gathered by the tracking infrastructure, enriches it with external datasources, and analyses the performance of your acquisition chanels, taking into account the engagement and ICP match of your leads.
+Hyperaktiv is 100% focused on giving you the right recommendations. Hyperaktiv collects the data gathered by the tracking infrastructure, enriches it with external datasources, and analyses the performance of your acquisition chanels, taking into account the engagement and ICP match of your users.
 
 ## Most common tracking softwares
 

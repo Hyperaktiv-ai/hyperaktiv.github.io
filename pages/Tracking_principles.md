@@ -2,14 +2,14 @@
 layout: default
 title: Tracking principles
 nav_order: 2
-description: "How to track your leads's behavior"
+description: "How to track your users' behavior"
 ---
 {% include variables.md %}
 
 # Tracking principles
 
-A strong tracking infrastructure implemented on your website and app will allow you to better understand your leads' behavior.
-Here are some of the main questions people have when it comes to lead tracking :
+A strong tracking infrastructure implemented on your website and app will allow you to better understand your users' behavior.
+Here are some of the main questions people have when it comes to user tracking :
 * how can we unify data from the website ?
 * which tools to use ? how to integrate them ?
 * what about consent mode ? ad blockers ? data protection / gdpr ?
@@ -28,7 +28,7 @@ There are a few great tools on the market today. But unfortunately, not one of t
 Let's start here : let's dissociate "how/what to track ?" from "which tools should I use ?"
 
 ## How/what to track ?
-On your website / webapp / mobile app, every time a lead is performing an action (opening a page, clicking on a button ...), an event will be recorded. This event contains properties (timestamp, identification of the lead, information about their device / web browser, language, location etc). These events should be independant to any tracking software ; we will just send them.
+On your website / webapp / mobile app, every time a user is performing an action (opening a page, clicking on a button ...), an event will be recorded. This event contains properties (timestamp, identification of the user, information about their device / web browser, language, location etc). These events should be independant to any tracking software ; we will just send them.
 
 We **do not recommend** to insert the code of tracking softwares directly in your website / webapp. Instead, you should use [Google Tag Manager].
 
