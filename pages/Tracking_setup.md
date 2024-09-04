@@ -78,13 +78,15 @@ dataLayer.push({
 ## Revenue
 
 A ``revenue`` event must be pushed everytime a payment is confirmed by the payment gateway.
-Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is processed.
+Most payment gateways (such as Stripe) offer the possibility to define a callback URL when payment is confirmed ; the revenue event should be pushed when this confirmation is received.
 Depending on how your app is structured, there are 2 possibilities :
-1. the user is redirected to a confirmation page where the payment information is available
-2. the payment information is not available in a page
+1. the user is redirected to a confirmation page where the payment information is available (client side implementation)
+2. the payment information is not available in a page (server side implementation)
 
-### Confirmation page
-In your app, the callback URL should lead to a payment confirmation page, displayed to the user. We can push a revenue event to GTM in this confirmation page. The page requires the amount, currency, product and subscription type in order to set the properties, so it might happen that you will have to append those parameters to the callback URL you provide to Stripe, so they can then be extracted in the confirmation page. Don't hesitate to contact us on [Slack community] if you struggle with the implementation.
+Don't hesitate to contact us on [Slack community] if you struggle with the implementation.
+
+### Client-side implementation
+If the callback URL redirects to a confirmation page displayed to the user, the revenue event can be pushed to GTM's datalayer. The page requires the amount, currency, product and subscription type in order to set the properties, so it might happen that you will have to append those parameters to the callback URL you provide to Stripe, so they can then be extracted in the confirmation page.
 
 Insert this piece of Javascript will send an event to Google Tag Manager :
 ````
@@ -101,14 +103,14 @@ Replace the amount, currency, product and type by the correct values :
 * ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
 * ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
 
-### The payment callback is entirely server-side
-If there is no confirmation page, or the payment is entirely processed server-side, then it's not possible to push the event to GTM's datalayer. In that situation, there are three options to push the revenue event :
+### Server-side implementation
+If the payment confirmation is not available in the frontend, then GTM's datalayer is not available. In that situation, there are several options to push the revenue event :
 1. Directly to Hyperaktiv via [Amplitude] API
-2. By sending a notification to the frontend from the backend
-3. Using a server-side GTM container
-4. Using Segment or any other ETL
+2. Sending a notification to the frontend from the backend (reactive apps)
+3. Using a Server GTM container
+4. Pushing through Segment (or any other ETL)
 
-#### 1. Amplitude API
+#### 1. Direct Amplitude API
 Here is the [full documentation](https://amplitude.com/docs/apis/analytics/http-v2#request)
 
 Here is a shorter version :
@@ -137,17 +139,30 @@ Headers : ``Content-Type: application/json``
 Just replace the parameters in ``{{..}}`` with the right values.
 
 #### 2. Backend to frontend notification
-Especially if you're using a reactive webapp, you can push a notification from the backend to the frontend, for example to display a confirmation message. In this notification, you can add the required parameters to then, from the frontend, push the event in GTM's datalayer.
+Especially if you're using a reactive webapp, you can push a notification from the backend to the frontend, for example to display a confirmation message. In this notification, you can add the required parameters to then, from the frontend, push the event in GTM's datalayer : 
+````
+dataLayer.push({
+ 'event': 'revenue',
+ 'amount': 15,
+ 'currency': 'EUR',
+ 'product': 'basic_plan',
+ 'type': 'yearly'
+ });
+````
+Replace the amount, currency, product and type by the correct values :
+* ``product`` : the name of the product the user purchased, for example : ``basic_plan``, ``enterprise_plan``...
+* ``type`` : the type of purchase, for example : ``monthly``, ``yearly``, ``one-time``, ``life-time``...
+* ``currency`` : we recommend to use a standard 3 letters long code ; for example ``EUR``
 
-#### 3. Server-side GTM container
-The downside of this approach is that the container is a VM on GCP, which requires a billing account
-The VM would be in the free tier for some time, but depending on the volume of events, you could be charged
+#### 3. Server GTM container
+This approach consists on creating a new "Server" container in Google Tag Manager, and from there pushing the event to Amplitude. The main downside of this approach is that the container is a VM on GCP, which requires a billing account. The VM would be in the free tier for some time, but depending on the volume of events, you could be charged.
+If we stick to revenue events only, then it's a very small cost (<1€ a month if less than 100 revenue events a month).
 --> we do not recommend to use the server-side tracking when it's possible to use the client-side (free).
-But if we stick to revenue events only, then it's a very small cost (<1€ a month if less than 100 revenue events a month).
-The procedure to install is [here](/pages/GTM_serverside)
+The complete procedure to install is [here](/pages/GTM_serverside)
 
-#### 4. Using Segment / another ETL
-Just push the event to Segment / your ETL, and from there, push the event to Amplitude
+#### 4. Using Segment or another ETL
+Just push the event to Segment / your ETL, and from there, push the event to Amplitude (this should not require to code). The exact implementation depends on your ETL.
+[How to push events to Segment with the API](https://segment.com/docs/connections/sources/catalog/libraries/server/http-api/#track)
 
 ## Custom event
 On every specific action that you consider worth being tracked, add this piece of Javascript :
