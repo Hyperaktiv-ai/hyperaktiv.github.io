@@ -4,7 +4,6 @@ title: GTM to Amplitude
 parent: Tracking setup
 nav_order: 3
 description: "Sending events from Google Tag Manager to Amplitude"
-has_children: true
 ---
 {% include variables.md %}
 {% raw %}

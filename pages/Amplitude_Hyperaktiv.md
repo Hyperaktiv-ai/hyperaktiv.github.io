@@ -4,7 +4,6 @@ title: Amplitude to Hyperaktiv
 parent: Tracking setup
 nav_order: 4
 description: "How to connect Hyperaktiv in Amplitude"
-has_children: true
 ---
 {% include variables.md %}
 {% raw %}

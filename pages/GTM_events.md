@@ -4,7 +4,6 @@ title: Pushing events to GTM
 parent: Tracking setup
 nav_order: 2
 description: "How to push events to GTM"
-has_children: true
 ---
 {% include variables.md %}
 {% raw %}
