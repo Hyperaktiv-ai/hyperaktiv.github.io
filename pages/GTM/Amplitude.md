@@ -21,10 +21,14 @@ In [Google Tag Manager], create the following tags with type ``Amplitude Analyti
 	* API Key : ``{{Amplitude - API key}}``
 	* Triggering : ``Initialisation - All Pages``
 
+# Session tracking
 By default, session tracking is activated : we strongly recommend to keep it activated.
+
+# EU projects
 If your [Amplitude] project is in the EU, check the "EU" checkbox in the tag configuration.
 
-Use the "Preview" mode in GTM to check that Amplitude is well initialized in all pages. In [Amplitude]'s real time view, you should see some events. 
+# Testing
+Use the "Preview" mode in GTM to check that [Amplitude] is well initialized in all pages. In [Amplitude]'s real time view, you should see some events.
 
 # Troubleshooting
 
