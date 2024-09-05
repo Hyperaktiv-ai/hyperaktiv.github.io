@@ -10,7 +10,7 @@ description: "Sending events from Google Tag Manager to Amplitude"
 
 # Amplitude with GTM
 
-<iframe width="480" height="360" src="https://youtu.be/uJRX4vaI3h4" frameborder="0"> </iframe>
+<iframe width="480" height="360" src="https://youtu.be/uJRX4vaI3h4?si=SyY1jc34TQxeZ8d9" frameborder="0"> </iframe>
 
 # Initialisation
 [Amplitude]'s script has to be "loaded" by [Google Tag Manager] each time a user navigates in your website / webapp.
