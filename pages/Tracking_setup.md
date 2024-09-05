@@ -17,9 +17,9 @@ The tracking infrastructure involves several tools, that have a specific role:
 * [Hyperaktiv] : segmentation of users, hyper-personalization and automation in order to increase your signups and conversions
 
 There are four steps, it takes only a few minutes :
-1. [Hyperaktiv with Amplitude](/pages/Hyperaktiv_Amplitude)
-2. [Installation of GTM](/pages/GTM/Install)
-3. [Amplitude with GTM](/pages/GTM/Amplitude)
+1. [Installation of GTM](/pages/GTM/Install)
+2. [Amplitude with GTM](/pages/GTM/Amplitude)
+3. [Hyperaktiv with Amplitude](/pages/Hyperaktiv_Amplitude)
 4. [Pushing events to GTM](/pages/GTM/Events)
 
 {% endraw %}

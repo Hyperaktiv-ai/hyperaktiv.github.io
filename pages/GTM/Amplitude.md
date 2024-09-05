@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 3. Amplitude with GTM
+title: 2. Amplitude with GTM
 parent: Tracking setup
-nav_order: 3
+nav_order: 2
 description: "Sending events from Google Tag Manager to Amplitude"
 ---
 {% include variables.md %}
@@ -31,6 +31,6 @@ In that case, try to use the ``History Change`` trigger instead of ``Initialisat
 
 # Next step >>
 
-[4. Pushing events to GTM](/pages/GTM/Events)
+[3. Hyperaktiv with Amplitude](/pages/Hyperaktiv_Amplitude)
 
 {% endraw %}

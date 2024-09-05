@@ -1,8 +1,8 @@
 ---
 layout: default
-title: 1. Hyperaktiv with Amplitude
+title: 3. Hyperaktiv with Amplitude
 parent: Tracking setup
-nav_order: 1
+nav_order: 3
 description: "How to connect Hyperaktiv in Amplitude"
 ---
 {% include variables.md %}
@@ -26,7 +26,7 @@ description: "How to connect Hyperaktiv in Amplitude"
 
 # Next step >>
 
-[2. Installation of GTM](/pages/GTM/Install)
+[4. Pushing events to GTM](/pages/GTM/Events)
 
 {% endraw %}
 
