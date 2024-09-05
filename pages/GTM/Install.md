@@ -10,6 +10,8 @@ description: "How to install Google Tag Manager on your website/webapp"
 
 # Installation of Google Tag Manager
 
+<iframe width="640" height="380" src="https://www.youtube.com/embed/XSIy8FsrUpY?si=Iu9etODEo3QxsyDz" title="How to Install and Configure Google Tag Manager" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+
 Read this : [Setup and install GTM](https://support.google.com/tagmanager/answer/6103696){:target="_blank"}{:rel="noopener noreferrer"}.
 
 It is recommended to create only one web container for both the website and the webapp.
