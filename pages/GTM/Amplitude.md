@@ -10,9 +10,11 @@ description: "Sending events from Google Tag Manager to Amplitude"
 
 # Amplitude with GTM
 
-[Amplitude]'s script has to be "loaded" by [Google Tag Manager] each time a user navigates in your website / webapp.
+<iframe width="480" height="360" src="https://youtu.be/uJRX4vaI3h4" frameborder="0"> </iframe>
 
 # Initialisation
+[Amplitude]'s script has to be "loaded" by [Google Tag Manager] each time a user navigates in your website / webapp.
+
 In [Google Tag Manager], create the following tags with type ``Amplitude Analytics Browser SDK`` :
 - "Amplitude - init" :
 	* Tag type : ``Initialize (init)``
