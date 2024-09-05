@@ -11,6 +11,8 @@ description: "How to track user identification"
 
 # User identification
 
+<iframe width="640" height="380" src="https://www.youtube.com/embed/WLbw4u6O9t0?si=3F7-NIkiAjSM0rlS" title="How to identify your users with Google Tag Manager and Amplitude" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 As soon as your user is identified, their email should be pushed to Hyperaktiv and all tracking softwares.
 This usually happens on signup and login.
 
