@@ -10,6 +10,8 @@ description: "How to connect Hyperaktiv in Amplitude"
 
 # Integrating Hyperaktiv and Amplitude
 
+<iframe width="640" height="380" src="https://www.youtube.com/embed/moKX9NmFGw4?si=5Kvzvr7OEsosjHvn" title="How to connect Amplitude to Hyperaktiv" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen> </iframe>
+
 1. Request an authentication key from us on [Slack community]
 2. Create a project in [Amplitude] : 
    * [US based](https://app.amplitude.com/signup){:target="_blank"}{:rel="noopener noreferrer"}
