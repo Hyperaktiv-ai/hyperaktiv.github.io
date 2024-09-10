@@ -25,24 +25,22 @@ Let's list a few tracking well-known tracking softwares :
 * [Amplitude]
 * [Posthog]
 * [Microsoft Clarity]
-* [Segment]
 
 ## Which tool should I use ?
 
-Well, it depends what you want to do
+Well, it depends what you want to do !
 
 ### I want to see where the visitors / users click, and where they go
 
-If you're a UX/UI designer, frontend developer or product person., you might need heatmaps (where people click) and sessions recordings.
+If you're a UX/UI designer, frontend developer or product person, you might need heatmaps (where people click) and sessions recordings.
 * [Hotjar] : probably the best fit
+* [Microsoft Clarity] : the tool is limited, but it's free
 * [Amplitude] offers this feature in the paid plan
-* [Microsoft Clarity] : the tool is very limited, but if like Microsoft ..
 
 ### I want global marketing KPIs and metrics in a ready-to-use dashboard
 
 If you're a marketing person, and you don't want to spend time configuring your own dashboard :
 * [Google Analytics] : for free, the easiest, the fastest ; but it's a bit more technical to get actual "conversions" (meaning payments) ; plus you will have access to quantitative metrics only, not qualitative
-* [Microsoft Clarity] : for free, very limited
 
 ### I want to be able to debug anything that happens from A to Z
 
@@ -54,7 +52,6 @@ If you're a software developer or a tech person, here is what you need :
 If you're a data analyst, and you love to spend time building charts
 * [Amplitude] : some bugs in the interface, and not possible to explore past events easily
 * [Mixpanel] : not bad, but limited in the free version ; quite complex to build simple things
-* [Segment] : although not the #1 choice
 
 ### I want to improve the efficiency of my funnel and increase signups and conversions
 
