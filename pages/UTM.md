@@ -40,3 +40,8 @@ Parameters are simply appended in a URL after a ``?``, separated by ``&`` (e.g.,
 * **Track ROI**: Use unique UTM parameters to measure performance and ROI.
 * **Experiment with A/B Testing**: Test different content or strategies using UTM parameters to find what works best.
 * **Create Campaign Presets**: Use tools like [Hootsuite](https://www.hootsuite.com/){:target="_blank"} to save and apply UTM parameters quickly and consistently.
+
+# How to automatically add UTM parameters to my Google Ads campaigns / ads ?
+* ``Admin`` > ``Account Settings`` > ``Tracking``
+* set this in "Final URL suffix" : ``utm_source=google&utm_medium=cpc&utm_campaign={campaignid}&utm_content={adgroupid}&utm_term={keyword}``
+All ads will now have UTM parameters
