@@ -1,4 +1,4 @@
-{% assign apiUrl = "https://app.swaggerhub.com/apis-docs/Hyperaktiv/api/1.91.0" %}
+{% assign apiUrl = "https://app.swaggerhub.com/apis/Hyperaktiv-ai/api/2.21.0" %}
 
 
 [Amplitude]: https://amplitude.com/
